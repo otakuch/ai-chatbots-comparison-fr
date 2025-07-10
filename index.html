@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison des Chatbots IA 2025 - Analyse Complète de la Consommation Énergétique et des Performances</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .header .meta {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .header .intro {
+            font-size: 1rem;
+            opacity: 0.85;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .language-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            padding: 20px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            min-width: 1600px;
+        }
+
+        .model-header {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid #dee2e6;
+            padding: 20px 15px;
+            text-align: center;
+            vertical-align: top;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            height: 140px;
+        }
+
+        .model-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            line-height: 1.2;
+        }
+
+        .model-header a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .model-header a:hover {
+            text-decoration: underline;
+        }
+
+        .model-header .flag {
+            font-size: 1.8rem;
+            margin-top: 8px;
+        }
+
+        .category-row {
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .category-row td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #34495e;
+        }
+
+        .data-cell {
+            padding: 12px;
+            border: 1px solid #dee2e6;
+            vertical-align: top;
+            background: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .data-cell:hover {
+            background: #f8f9fa;
+        }
+
+        .battery-gauge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 3px 0;
+            font-size: 0.85rem;
+        }
+
+        .battery {
+            width: 50px;
+            height: 16px;
+            border: 2px solid #333;
+            border-radius: 3px;
+            position: relative;
+            background: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .battery::after {
+            content: '';
+            width: 3px;
+            height: 10px;
+            background: #333;
+            position: absolute;
+            right: -3px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 0 2px 2px 0;
+        }
+
+        .battery-fill {
+            height: 100%;
+            border-radius: 1px;
+            transition: width 0.5s ease;
+        }
+
+        .battery-fill.low { background: #27ae60; }
+        .battery-fill.medium { background: #f39c12; }
+        .battery-fill.high { background: #e67e22; }
+        .battery-fill.very-high { background: #e74c3c; }
+
+        .metric-label {
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 0.85rem;
+        }
+
+        .metric-value {
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        .rating {
+            display: inline-block;
+            padding: 3px 6px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .rating.A { background: #d4edda; color: #155724; }
+        .rating.B { background: #d1ecf1; color: #0c5460; }
+        .rating.C { background: #fff3cd; color: #856404; }
+        .rating.D { background: #f8d7da; color: #721c24; }
+        .rating.F { background: #f8d7da; color: #721c24; }
+
+        .pros-cons {
+            text-align: left;
+        }
+
+        .pros-cons h4 {
+            color: #2c3e50;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .pros-cons ul {
+            margin-left: 16px;
+            margin-bottom: 10px;
+        }
+
+        .pros-cons li {
+            margin-bottom: 3px;
+            font-size: 0.8rem;
+        }
+
+        .pros { color: #27ae60; }
+        .cons { color: #e74c3c; }
+
+        .best-for {
+            background: #e8f5e8;
+            padding: 6px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-size: 0.8rem;
+        }
+
+        .avoid-when {
+            background: #ffeaea;
+            padding: 6px;
+            border-radius: 4px;
+            margin: 6px 0;
+            font-size: 0.8rem;
+        }
+
+        .feature-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            margin: 1px;
+        }
+
+        .score {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1rem;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .header .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .table-container {
+                padding: 10px;
+            }
+            
+            .comparison-table {
+                font-size: 11px;
+            }
+            
+            .model-header h3 {
+                font-size: 1.1rem;
+            }
+            
+            .data-cell {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#" class="language-toggle" onclick="switchLanguage()">🇬🇧 English</a>
+            <h1>🤖⚡ Comparaison des Chatbots IA 2025</h1>
+            <p class="subtitle">Analyse Complète de la Consommation Énergétique et des Performances</p>
+            <div class="meta">
+                <strong>Par Naully Nicolas</strong> • Juillet 2025
+            </div>
+            <div class="intro">
+                Cette analyse complète compare les chatbots IA les plus avancés au monde avec un focus sur l'efficacité énergétique, les métriques de performance et les standards de conformité. Alors que l'IA s'intègre de plus en plus dans nos flux de travail quotidiens, comprendre l'impact environnemental et l'efficacité de ces modèles est crucial pour prendre des décisions éclairées. Chaque modèle a été évalué selon 9 catégories critiques, avec une attention particulière aux patterns de consommation énergétique pour différentes tâches.
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th class="model-header" style="width: 140px;">
+                            <h3>Catégorie</h3>
+                        </th>
+                        <th class="model-header">
+                            <h3>ChatGPT-4o</h3>
+                            <a href="https://chat.openai.com" target="_blank">chat.openai.com</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Claude Sonnet 4</h3>
+                            <a href="https://claude.ai" target="_blank">claude.ai</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Gemini Pro</h3>
+                            <a href="https://gemini.google.com" target="_blank">gemini.google.com</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Perplexity Pro</h3>
+                            <a href="https://perplexity.ai" target="_blank">perplexity.ai</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Mistral Large</h3>
+                            <a href="https://mistral.ai" target="_blank">mistral.ai</a>
+                            <div class="flag">🇫🇷</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Grok 3</h3>
+                            <a href="https://x.ai" target="_blank">x.ai</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>DeepSeek R1</h3>
+                            <a href="https://chat.deepseek.com" target="_blank">chat.deepseek.com</a>
+                            <div class="flag">🇨🇳</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Qwen 2.5-Max</h3>
+                            <a href="https://tongyi.aliyun.com" target="_blank">tongyi.aliyun.com</a>
+                            <div class="flag">🇨🇳</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Step-2</h3>
+                            <a href="https://stepfun.com" target="_blank">stepfun.com</a>
+                            <div class="flag">🇨🇳</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Informations sur les Modèles -->
+                    <tr class="category-row">
+                        <td colspan="10">📋 Informations sur les Modèles</td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Date de Sortie</strong></td>
+                        <td class="data-cell">Mai 2024</td>
+                        <td class="data-cell">Mai 2025</td>
+                        <td class="data-cell">Février 2024</td>
+                        <td class="data-cell">Janvier 2024</td>
+                        <td class="data-cell">Avril 2024</td>
+                        <td class="data-cell">Février 2025</td>
+                        <td class="data-cell">Janvier 2025</td>
+                        <td class="data-cell">Janvier 2025</td>
+                        <td class="data-cell">Mars 2025</td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Paramètres</strong></td>
+                        <td class="data-cell">~1,8T</td>
+                        <td class="data-cell">~200B</td>
+                        <td class="data-cell">~540B</td>
+                        <td class="data-cell">~70B</td>
+                        <td class="data-cell">~405B</td>
+                        <td class="data-cell">~314B</td>
+                        <td class="data-cell">~671B</td>
+                        <td class="data-cell">~688B (MoE)</td>
+                        <td class="data-cell">~1T+</td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Architecture</strong></td>
+                        <td class="data-cell">Transformer</td>
+                        <td class="data-cell">IA Constitutionnelle</td>
+                        <td class="data-cell">Gemini</td>
+                        <td class="data-cell">Transformer + RAG</td>
+                        <td class="data-cell">Transformer</td>
+                        <td class="data-cell">Transformer + RL</td>
+                        <td class="data-cell">MoE + RL</td>
+                        <td class="data-cell">MoE</td>
+                        <td class="data-cell">MoE Multimodal</td>
+                    </tr>
+
+                    <!-- Impact Énergétique et Environnemental -->
+                    <tr class="category-row">
+                        <td colspan="10">⚡ Impact Énergétique et Environnemental</td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Énergie Requête Texte (kWh)</strong><br><small>Par 1000 mots</small></td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 80%"></div>
+                                </div>
+                                <span class="metric-value">0,0029</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 20%"></div>
+                                </div>
+                                <span class="metric-value">0,0008</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 45%"></div>
+                                </div>
+                                <span class="metric-value">0,0015</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 15%"></div>
+                                </div>
+                                <span class="metric-value">0,0006</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 40%"></div>
+                                </div>
+                                <span class="metric-value">0,0012</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 95%"></div>
+                                </div>
+                                <span class="metric-value">0,0034</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 12%"></div>
+                                </div>
+                                <span class="metric-value">0,0005</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 18%"></div>
+                                </div>
+                                <span class="metric-value">0,0007</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 30%"></div>
+                                </div>
+                                <span class="metric-value">0,0010</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Génération d'Image (kWh)</strong><br><small>Par image</small></td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill high" style="width: 70%"></div>
+                                </div>
+                                <span class="metric-value">0,012</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 35%"></div>
+                                </div>
+                                <span class="metric-value">0,008</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 50%"></div>
+                                </div>
+                                <span class="metric-value">0,010</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 85%"></div>
+                                </div>
+                                <span class="metric-value">0,018</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 45%"></div>
+                                </div>
+                                <span class="metric-value">0,009</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Génération Vidéo (kWh)</strong><br><small>Par 30 secondes</small></td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 90%"></div>
+                                </div>
+                                <span class="metric-value">0,45</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 85%"></div>
+                                </div>
+                                <span class="metric-value">0,42</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">N/D</td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill high" style="width: 65%"></div>
+                                </div>
+                                <span class="metric-value">0,32</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Énergie d'Entraînement (MWh)</strong></td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 90%"></div>
+                                </div>
+                                <span class="metric-value">4 300</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 25%"></div>
+                                </div>
+                                <span class="metric-value">1 200</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill high" style="width: 70%"></div>
+                                </div>
+                                <span class="metric-value">2 800</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 20%"></div>
+                                </div>
+                                <span class="metric-value">800</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 50%"></div>
+                                </div>
+                                <span class="metric-value">1 900</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 100%"></div>
+                                </div>
+                                <span class="metric-value">5 600</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 8%"></div>
+                                </div>
+                                <span class="metric-value">280</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 15%"></div>
+                                </div>
+                                <span class="metric-value">650</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 45%"></div>
+                                </div>
+                                <span class="metric-value">1 800</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Empreinte Carbone (g CO₂/requête)</strong></td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 85%"></div>
+                                </div>
+                                <span class="metric-value">4,32</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 18%"></div>
+                                </div>
+                                <span class="metric-value">1,25</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 42%"></div>
+                                </div>
+                                <span class="metric-value">2,18</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 12%"></div>
+                                </div>
+                                <span class="metric-value">0,95</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 35%"></div>
+                                </div>
+                                <span class="metric-value">1,82</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill very-high" style="width: 95%"></div>
+                                </div>
+                                <span class="metric-value">5,12</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 10%"></div>
+                                </div>
+                                <span class="metric-value">0,78</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 15%"></div>
+                                </div>
+                                <span class="metric-value">1,05</span>
+                            </div>
+                        </td>
+                        <td class="data-cell">
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill low" style="width: 22%"></div>
+                                </div>
+                                <span class="metric-value">1,48</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Note Environnementale</strong></td>
+                        <td class="data-cell"><span class="rating C">C+</span></td>
+                        <td class="data-cell"><span class="rating A">A</span></td>
+                        <td class="data-cell"><span class="rating B">B+</span></td>
+                        <td class="data-cell"><span class="rating A">A-</span></td>
+                        <td class="data-cell"><span class="rating B">B+</span></td>
+                        <td class="
