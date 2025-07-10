@@ -1,332 +1,876 @@
-// Configuration et données des modèles d'IA
-const configurationModeles = {
-    modeles: [
-        {
-            nom: "ChatGPT-4o",
-            url: "https://chat.openai.com",
-            drapeau: "🇺🇸",
-            dateSortie: "Mai 2024",
-            parametres: "~1,8T",
-            architecture: "Transformer"
-        },
-        {
-            nom: "Claude Sonnet 4",
-            url: "https://claude.ai",
-            drapeau: "🇺🇸",
-            dateSortie: "Mai 2025",
-            parametres: "~200B",
-            architecture: "IA Constitutionnelle"
-        },
-        {
-            nom: "Gemini Pro",
-            url: "https://gemini.google.com",
-            drapeau: "🇺🇸",
-            dateSortie: "Février 2024",
-            parametres: "~540B",
-            architecture: "Gemini"
-        },
-        {
-            nom: "Perplexity Pro",
-            url: "https://perplexity.ai",
-            drapeau: "🇺🇸",
-            dateSortie: "Janvier 2024",
-            parametres: "~70B",
-            architecture: "Transformer + RAG"
-        },
-        {
-            nom: "Mistral Large",
-            url: "https://mistral.ai",
-            drapeau: "🇫🇷",
-            dateSortie: "Avril 2024",
-            parametres: "~405B",
-            architecture: "Transformer"
-        },
-        {
-            nom: "Grok 3",
-            url: "https://x.ai",
-            drapeau: "🇺🇸",
-            dateSortie: "Février 2025",
-            parametres: "~314B",
-            architecture: "Transformer + RL"
-        },
-        {
-            nom: "DeepSeek R1",
-            url: "https://chat.deepseek.com",
-            drapeau: "🇨🇳",
-            dateSortie: "Janvier 2025",
-            parametres: "~671B",
-            architecture: "MoE + RL"
-        },
-        {
-            nom: "Qwen 2.5-Max",
-            url: "https://tongyi.aliyun.com",
-            drapeau: "🇨🇳",
-            dateSortie: "Janvier 2025",
-            parametres: "~688B (MoE)",
-            architecture: "MoE"
-        },
-        {
-            nom: "Step-2",
-            url: "https://stepfun.com",
-            drapeau: "🇨🇳",
-            dateSortie: "Mars 2025",
-            parametres: "~1T+",
-            architecture: "MoE Multimodal"
-        }
-    ]
+/**
+ * =============================================================================
+ * COMPARAISON DES CHATBOTS IA 2025 - SCRIPT JAVASCRIPT
+ * Analyse Complète de la Consommation Énergétique et des Performances
+ * Par Naully Nicolas - Juillet 2025
+ * =============================================================================
+ */
+
+// Configuration globale de l'application
+const configurationApplication = {
+    version: '1.0.0',
+    dateMiseAJour: '2025-07-10',
+    auteur: 'Naully Nicolas',
+    langue: 'fr',
+    debug: false,
+    
+    // Paramètres d'animation
+    animationDuree: 300,
+    animationDelai: 50,
+    
+    // Seuils pour les jauges de batterie
+    seuilsBatterie: {
+        faible: 25,
+        moyen: 50,
+        eleve: 75,
+        tresEleve: 100
+    },
+    
+    // Configuration des couleurs pour les métriques
+    couleursBatterie: {
+        faible: '#27ae60',
+        moyenne: '#f39c12',
+        elevee: '#e67e22',
+        tresElevee: '#e74c3c'
+    }
 };
 
-// Données énergétiques et de performance
-const donneesPerformance = {
-    energieRequeteTexte: [0.0029, 0.0008, 0.0015, 0.0006, 0.0012, 0.0034, 0.0005, 0.0007, 0.0010],
-    generationImage: [0.012, 0.008, 0.010, "N/D", "N/D", 0.018, "N/D", "N/D", 0.009],
-    generationVideo: [0.45, "N/D", 0.42, "N/D", "N/D", "N/D", "N/D", "N/D", 0.32],
-    energieEntrainement: [4300, 1200, 2800, 800, 1900, 5600, 280, 650, 1800],
-    empreinteCarbone: [4.32, 1.25, 2.18, 0.95, 1.82, 5.12, 0.78, 1.05, 1.48],
-    noteEnvironnementale: ["C+", "A", "B+", "A-", "B+", "D", "A+", "A", "A-"],
-    benchmarkMMLU: [88.7, 89.2, 83.7, 73.5, 84.0, 85.8, 90.1, 87.5, 86.3],
-    latenceReponse: [2.1, 1.8, 1.5, 1.2, 2.3, 3.2, 1.1, 1.4, 1.7],
-    fenetreContextuelle: [128000, 200000, 1000000, 32000, 128000, 128000, 256000, 512000, 200000],
-    noteQualite: ["A", "A+", "B+", "B", "B+", "B", "A", "A-", "A-"],
-    prixAPI: [0.015, 0.015, 0.0075, 0.02, 0.015, 0.012, 0.0014, 0.002, 0.003],
-    coutParRequete: [0.045, 0.012, 0.011, 0.012, 0.018, 0.038, 0.0028, 0.0028, 0.0051],
-    noteValeur: ["C", "A", "A", "A-", "B", "D", "A+", "A+", "A"],
-    supportMultimodal: ["Texte, Image, Vidéo", "Texte, Image", "Texte, Image, Vidéo", "Texte", "Texte", "Texte, Image", "Texte", "Texte", "Texte, Image, Vidéo"],
-    langagesProgrammation: [120, 85, 100, 50, 95, 110, 200, 150, 130],
-    scorePrecision: [92, 94, 89, 78, 87, 88, 96, 91, 90],
-    disponibilitePlateforme: ["Web, API, Mobile", "Web, API, Mobile", "Web, API, Mobile", "Web, API", "API, Web", "Web, API", "Web, API", "Web, API", "Web, API"],
-    regionsGeographiques: ["Mondial", "US, EU", "Mondial", "US, EU", "EU, US", "US", "Chine", "Chine", "Chine"],
-    limitesTaux: ["3500/jour", "Illimitées", "60/min", "600/jour", "1000/jour", "300/jour", "50/jour", "100/jour", "200/jour"],
-    conformiteRGPD: ["Partielle", "Complète", "Complète", "Partielle", "Complète", "Non", "Non", "Non", "Non"],
-    classificationAIAct: ["Haut risque", "Conforme", "Haut risque", "Risque limité", "Conforme", "Non évalué", "Non évalué", "Non évalué", "Non évalué"],
-    localisationDonnees: ["US", "US/EU", "US", "US", "EU", "US", "Chine", "Chine", "Chine"],
-    noteConfidentialite: ["B", "A", "B+", "B", "A", "C", "D", "D", "D"],
-    facilitéUtilisation: [9.2, 9.5, 8.8, 9.0, 8.5, 8.0, 7.5, 7.8, 8.2],
-    preferenceDeveloppeurs: [8.9, 9.1, 8.5, 7.8, 8.7, 8.2, 8.8, 8.6, 8.4],
-    frequenceMiseAJour: ["Mensuelle", "Mensuelle", "Trimestrielle", "Hebdomadaire", "Bimestrielle", "Mensuelle", "Bimestrielle", "Mensuelle", "Mensuelle"]
-};
+// Variables globales pour la gestion des données
+let donneesModeles = null;
+let donneesBenchmarks = null;
+let filtresActifs = {};
+let triActuel = null;
+let vueActuelle = 'tableau';
 
-// Fonction pour créer une jauge de batterie
-function creerJaugeBatterie(valeur, valeurMax, unite = "") {
-    const pourcentage = (valeur / valeurMax) * 100;
-    let classe = "low";
-    
-    if (pourcentage > 75) classe = "very-high";
-    else if (pourcentage > 50) classe = "high";
-    else if (pourcentage > 25) classe = "medium";
-    
-    return `
-        <div class="battery-gauge">
-            <div class="battery">
-                <div class="battery-fill ${classe}" style="width: ${Math.min(pourcentage, 100)}%"></div>
-            </div>
-            <span class="metric-value">${valeur}${unite}</span>
-        </div>
-    `;
-}
+/**
+ * =============================================================================
+ * INITIALISATION DE L'APPLICATION
+ * =============================================================================
+ */
 
-// Fonction pour créer une note colorée
-function creerNote(note) {
-    const classe = note.replace(/[+-]/g, '');
-    return `<span class="rating ${classe}">${note}</span>`;
-}
-
-// Fonction pour générer le tableau complet
-function genererTableau() {
-    const tableau = document.getElementById('comparisonTable');
-    
-    // En-tête du tableau
-    let html = `
-        <thead>
-            <tr>
-                <th class="model-header" style="width: 140px;">
-                    <h3>Catégorie</h3>
-                </th>
-    `;
-    
-    // Ajouter les en-têtes pour chaque modèle
-    configurationModeles.modeles.forEach(modele => {
-        html += `
-            <th class="model-header">
-                <h3>${modele.nom}</h3>
-                <a href="${modele.url}" target="_blank">${modele.url.replace('https://', '')}</a>
-                <div class="flag">${modele.drapeau}</div>
-            </th>
-        `;
-    });
-    
-    html += `
-            </tr>
-        </thead>
-        <tbody>
-    `;
-    
-    // Section Informations sur les Modèles
-    html += `
-        <tr class="category-row">
-            <td colspan="${configurationModeles.modeles.length + 1}">📋 Informations sur les Modèles</td>
-        </tr>
-        <tr>
-            <td class="data-cell"><strong>Date de Sortie</strong></td>
-    `;
-    configurationModeles.modeles.forEach(modele => {
-        html += `<td class="data-cell">${modele.dateSortie}</td>`;
-    });
-    html += `</tr>`;
-    
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Paramètres</strong></td>
-    `;
-    configurationModeles.modeles.forEach(modele => {
-        html += `<td class="data-cell">${modele.parametres}</td>`;
-    });
-    html += `</tr>`;
-    
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Architecture</strong></td>
-    `;
-    configurationModeles.modeles.forEach(modele => {
-        html += `<td class="data-cell">${modele.architecture}</td>`;
-    });
-    html += `</tr>`;
-    
-    // Section Impact Énergétique
-    html += `
-        <tr class="category-row">
-            <td colspan="${configurationModeles.modeles.length + 1}">⚡ Impact Énergétique et Environnemental</td>
-        </tr>
-    `;
-    
-    // Énergie requête texte
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Énergie Requête Texte (kWh)</strong><br><small>Par 1000 mots</small></td>
-    `;
-    donneesPerformance.energieRequeteTexte.forEach(valeur => {
-        html += `<td class="data-cell">${creerJaugeBatterie(valeur, 0.0034)}</td>`;
-    });
-    html += `</tr>`;
-    
-    // Génération d'image
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Génération d'Image (kWh)</strong><br><small>Par image</small></td>
-    `;
-    donneesPerformance.generationImage.forEach(valeur => {
-        if (valeur === "N/D") {
-            html += `<td class="data-cell">N/D</td>`;
-        } else {
-            html += `<td class="data-cell">${creerJaugeBatterie(valeur, 0.018)}</td>`;
-        }
-    });
-    html += `</tr>`;
-    
-    // Génération vidéo
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Génération Vidéo (kWh)</strong><br><small>Par 30 secondes</small></td>
-    `;
-    donneesPerformance.generationVideo.forEach(valeur => {
-        if (valeur === "N/D") {
-            html += `<td class="data-cell">N/D</td>`;
-        } else {
-            html += `<td class="data-cell">${creerJaugeBatterie(valeur, 0.45)}</td>`;
-        }
-    });
-    html += `</tr>`;
-    
-    // Énergie d'entraînement
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Énergie d'Entraînement (MWh)</strong></td>
-    `;
-    donneesPerformance.energieEntrainement.forEach(valeur => {
-        html += `<td class="data-cell">${creerJaugeBatterie(valeur, 5600, '')}</td>`;
-    });
-    html += `</tr>`;
-    
-    // Empreinte carbone
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Empreinte Carbone (g CO₂/requête)</strong></td>
-    `;
-    donneesPerformance.empreinteCarbone.forEach(valeur => {
-        html += `<td class="data-cell">${creerJaugeBatterie(valeur, 5.12)}</td>`;
-    });
-    html += `</tr>`;
-    
-    // Note environnementale
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Note Environnementale</strong></td>
-    `;
-    donneesPerformance.noteEnvironnementale.forEach(note => {
-        html += `<td class="data-cell">${creerNote(note)}</td>`;
-    });
-    html += `</tr>`;
-    
-    // Section Métriques de Performance
-    html += `
-        <tr class="category-row">
-            <td colspan="${configurationModeles.modeles.length + 1}">📊 Métriques de Performance</td>
-        </tr>
-    `;
-    
-    // Benchmark MMLU
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Benchmark MMLU (%)</strong></td>
-    `;
-    donneesPerformance.benchmarkMMLU.forEach(valeur => {
-        html += `<td class="data-cell"><span class="score">${valeur}%</span></td>`;
-    });
-    html += `</tr>`;
-    
-    // Latence de réponse
-    html += `
-        <tr>
-            <td class="data-cell"><strong>Latence de Réponse (s)</strong></td>
-    `;
-    donneesPerformance.latenceReponse.forEach(valeur => {
-        html += `<td class="data-cell">${valeur}s</td>`;
-    });
-    html += `</tr>`;
-    
-    // Fermer le tbody et le tableau
-    html += `
-        </tbody>
-    `;
-    
-    tableau.innerHTML = html;
-}
-
-// Fonction d'initialisation du tableau
-function initialiserTableau() {
-    console.log("Initialisation du tableau de comparaison des chatbots IA...");
+/**
+ * Initialise l'application au chargement de la page
+ */
+function initialiserApplication() {
     try {
-        genererTableau();
-        console.log("Tableau généré avec succès !");
+        console.log('🚀 Initialisation de la Comparaison des Chatbots IA 2025');
+        
+        // Afficher les informations de configuration si en mode debug
+        if (configurationApplication.debug) {
+            console.log('📊 Configuration:', configurationApplication);
+        }
+        
+        // Initialiser les événements
+        initialiserEvenements();
+        
+        // Charger les données si disponibles
+        chargerDonnees();
+        
+        // Initialiser les animations
+        initialiserAnimations();
+        
+        // Initialiser les fonctionnalités interactives
+        initialiserInteractivite();
+        
+        // Vérifier la compatibilité du navigateur
+        verifierCompatibilite();
+        
+        console.log('✅ Application initialisée avec succès');
+        
     } catch (erreur) {
-        console.error("Erreur lors de la génération du tableau :", erreur);
+        console.error('❌ Erreur lors de l\'initialisation:', erreur);
+        afficherMessageErreur('Erreur lors du chargement de l\'application');
     }
 }
 
-// Fonction utilitaire pour mettre à jour les données
-function mettreAJourDonnees(nouvellesDonnees) {
-    Object.assign(donneesPerformance, nouvellesDonnees);
-    genererTableau();
-    console.log("Données mises à jour et tableau régénéré");
+/**
+ * Initialise tous les événements de l'interface
+ */
+function initialiserEvenements() {
+    console.log('🎯 Initialisation des événements');
+    
+    // Événements au chargement du document
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('📄 Document chargé');
+        
+        // Initialiser les jauges de batterie avec animation
+        setTimeout(() => {
+            animerJaugesBatterie();
+        }, 500);
+        
+        // Ajouter les événements de survol
+        ajouterEvenementsHover();
+        
+        // Initialiser les tooltips
+        initialiserTooltips();
+    });
+    
+    // Événements de redimensionnement
+    window.addEventListener('resize', debounce(() => {
+        console.log('📱 Redimensionnement détecté');
+        ajusterAffichageResponsive();
+    }, 250));
+    
+    // Événements de défilement pour les effets parallax
+    window.addEventListener('scroll', throttle(() => {
+        gererEffetsDefilement();
+    }, 16)); // 60fps
+    
+    // Événements clavier pour l'accessibilité
+    document.addEventListener('keydown', gererNavigationClavier);
+    
+    // Événements pour la gestion d'erreurs globales
+    window.addEventListener('error', (event) => {
+        console.error('🚨 Erreur JavaScript:', event.error);
+        if (configurationApplication.debug) {
+            afficherMessageErreur(`Erreur: ${event.error.message}`);
+        }
+    });
 }
 
-// Initialisation au chargement de la page
-document.addEventListener('DOMContentLoaded', initialiserTableau);
+/**
+ * =============================================================================
+ * GESTION DES DONNÉES
+ * =============================================================================
+ */
 
-// Export des fonctions pour utilisation externe (si nécessaire)
-window.tableauIA = {
-    initialiser: initialiserTableau,
-    mettreAJour: mettreAJourDonnees,
-    donnees: donneesPerformance,
-    configuration: configurationModeles
+/**
+ * Charge les données des modèles et benchmarks
+ */
+async function chargerDonnees() {
+    try {
+        console.log('📡 Chargement des données...');
+        
+        // Simuler le chargement de données (à remplacer par de vrais appels API)
+        await similerChargementDonnees();
+        
+        console.log('✅ Données chargées avec succès');
+        
+    } catch (erreur) {
+        console.error('❌ Erreur lors du chargement des données:', erreur);
+        afficherMessageErreur('Impossible de charger les données');
+    }
+}
+
+/**
+ * Simule le chargement de données (remplace les vrais appels API)
+ */
+function similerChargementDonnees() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            // Données simulées des modèles
+            donneesModeles = {
+                'chatgpt-4o': {
+                    nom: 'ChatGPT-4o',
+                    editeur: 'OpenAI',
+                    pays: 'États-Unis',
+                    url: 'https://chat.openai.com',
+                    dateSortie: '2024-05',
+                    parametres: '1.8T',
+                    architecture: 'Transformer',
+                    consommationTexte: 0.0029,
+                    consommationImage: 0.012,
+                    consommationVideo: 0.45,
+                    energieEntrainement: 4300,
+                    empreinteCarbone: 4.32,
+                    noteEnvironnementale: 'C+',
+                    scoreMMLS: 87.2,
+                    latence: 850,
+                    noteQualite: 'A-'
+                },
+                // Autres modèles...
+            };
+            
+            resolve();
+        }, 1000);
+    });
+}
+
+/**
+ * =============================================================================
+ * ANIMATIONS ET EFFETS VISUELS
+ * =============================================================================
+ */
+
+/**
+ * Initialise toutes les animations de l'interface
+ */
+function initialiserAnimations() {
+    console.log('🎬 Initialisation des animations');
+    
+    // Animation d'entrée du conteneur principal
+    const conteneur = document.querySelector('.container');
+    if (conteneur) {
+        conteneur.style.opacity = '0';
+        conteneur.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+            conteneur.style.transition = 'all 0.6s ease-out';
+            conteneur.style.opacity = '1';
+            conteneur.style.transform = 'translateY(0)';
+        }, 100);
+    }
+    
+    // Animation des éléments au défilement
+    observerElementsAuDefilement();
+}
+
+/**
+ * Anime toutes les jauges de batterie avec un effet de remplissage progressif
+ */
+function animerJaugesBatterie() {
+    console.log('🔋 Animation des jauges de batterie');
+    
+    const jauges = document.querySelectorAll('.battery-fill');
+    
+    jauges.forEach((jauge, index) => {
+        // Récupérer la largeur finale depuis le CSS
+        const largeurFinale = jauge.style.width;
+        
+        // Commencer avec une largeur de 0
+        jauge.style.width = '0%';
+        
+        // Animer avec un délai décalé pour un effet en cascade
+        setTimeout(() => {
+            jauge.style.transition = `width ${configurationApplication.animationDuree * 2}ms ease-out`;
+            jauge.style.width = largeurFinale;
+            
+            // Ajouter un effet de brillance après l'animation
+            setTimeout(() => {
+                ajouterEffetBrillance(jauge);
+            }, configurationApplication.animationDuree * 2);
+            
+        }, index * configurationApplication.animationDelai);
+    });
+}
+
+/**
+ * Ajoute un effet de brillance à un élément
+ */
+function ajouterEffetBrillance(element) {
+    element.style.position = 'relative';
+    element.style.overflow = 'hidden';
+    
+    // Créer l'élément de brillance
+    const brillance = document.createElement('div');
+    brillance.style.position = 'absolute';
+    brillance.style.top = '0';
+    brillance.style.left = '-100%';
+    brillance.style.width = '100%';
+    brillance.style.height = '100%';
+    brillance.style.background = 'linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)';
+    brillance.style.transition = 'left 0.6s ease-out';
+    
+    element.appendChild(brillance);
+    
+    // Déclencher l'animation
+    setTimeout(() => {
+        brillance.style.left = '100%';
+    }, 50);
+    
+    // Nettoyer après l'animation
+    setTimeout(() => {
+        if (brillance.parentNode) {
+            brillance.parentNode.removeChild(brillance);
+        }
+    }, 650);
+}
+
+/**
+ * =============================================================================
+ * INTERACTIVITÉ ET GESTION DES ÉVÉNEMENTS
+ * =============================================================================
+ */
+
+/**
+ * Initialise toutes les fonctionnalités interactives
+ */
+function initialiserInteractivite() {
+    console.log('🎮 Initialisation de l\'interactivité');
+    
+    // Ajouter les gestionnaires de clic pour les éléments interactifs
+    ajouterGestionnairesClics();
+    
+    // Initialiser les filtres et tris
+    initialiserFiltresTris();
+    
+    // Configurer les raccourcis clavier
+    configurerRaccourcisClavier();
+}
+
+/**
+ * Ajoute tous les événements de survol pour les effets visuels
+ */
+function ajouterEvenementsHover() {
+    console.log('🖱️ Ajout des événements de survol');
+    
+    // Effet hover sur les en-têtes de modèles
+    const entetesModeles = document.querySelectorAll('.model-header');
+    entetesModeles.forEach(entete => {
+        entete.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px) scale(1.02)';
+            this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+        });
+        
+        entete.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '';
+        });
+    });
+    
+    // Effet hover sur les cellules de données
+    const cellulesData = document.querySelectorAll('.data-cell');
+    cellulesData.forEach(cellule => {
+        cellule.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#f8f9fa';
+            this.style.transform = 'scale(1.01)';
+            this.style.zIndex = '5';
+        });
+        
+        cellule.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = '';
+            this.style.transform = '';
+            this.style.zIndex = '';
+        });
+    });
+    
+    // Effet hover sur les notes (ratings)
+    const notes = document.querySelectorAll('.rating');
+    notes.forEach(note => {
+        note.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1) rotate(2deg)';
+        });
+        
+        note.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+        });
+    });
+}
+
+/**
+ * =============================================================================
+ * GESTION DES FILTRES ET TRIS
+ * =============================================================================
+ */
+
+/**
+ * Initialise le système de filtres et de tris
+ */
+function initialiserFiltresTris() {
+    console.log('🔍 Initialisation des filtres et tris');
+    
+    // Créer l'interface de filtrage si elle n'existe pas
+    creerInterfaceFiltrage();
+    
+    // Initialiser les gestionnaires d'événements pour les filtres
+    ajouterEvenementsFiltres();
+}
+
+/**
+ * Crée l'interface de filtrage dynamique
+ */
+function creerInterfaceFiltrage() {
+    // Vérifier si l'interface existe déjà
+    if (document.querySelector('.interface-filtrage')) {
+        return;
+    }
+    
+    const conteneurFiltres = document.createElement('div');
+    conteneurFiltres.className = 'interface-filtrage';
+    conteneurFiltres.innerHTML = `
+        <div class="panneau-filtres">
+            <h3>🔍 Filtres et Options</h3>
+            <div class="groupe-filtres">
+                <label>
+                    <input type="checkbox" id="filtre-eco" checked>
+                    Modèles éco-responsables (Note A/B)
+                </label>
+                <label>
+                    <input type="checkbox" id="filtre-performance" checked>
+                    Haute performance (Score MMLU > 85%)
+                </label>
+                <label>
+                    <input type="checkbox" id="filtre-rapide" checked>
+                    Réponse rapide (< 500ms)
+                </label>
+            </div>
+            <div class="controles-tri">
+                <select id="tri-colonne">
+                    <option value="">Trier par...</option>
+                    <option value="energie">Consommation énergétique</option>
+                    <option value="performance">Performance MMLU</option>
+                    <option value="latence">Latence</option>
+                    <option value="carbone">Empreinte carbone</option>
+                </select>
+                <button id="btn-inverser-tri">⇅</button>
+            </div>
+            <button id="btn-reinitialiser">🔄 Réinitialiser</button>
+        </div>
+    `;
+    
+    // Insérer avant le tableau
+    const conteneurTableau = document.querySelector('.table-container');
+    if (conteneurTableau) {
+        conteneurTableau.parentNode.insertBefore(conteneurFiltres, conteneurTableau);
+    }
+}
+
+/**
+ * =============================================================================
+ * UTILITAIRES ET FONCTIONS D'AIDE
+ * =============================================================================
+ */
+
+/**
+ * Fonction debounce pour limiter les appels répétés
+ */
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func.apply(this, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+/**
+ * Fonction throttle pour limiter la fréquence d'exécution
+ */
+function throttle(func, limit) {
+    let inThrottle;
+    return function executedFunction(...args) {
+        if (!inThrottle) {
+            func.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
+/**
+ * Affiche un message d'erreur à l'utilisateur
+ */
+function afficherMessageErreur(message) {
+    console.error('💥 Erreur:', message);
+    
+    // Créer une notification d'erreur
+    const notification = document.createElement('div');
+    notification.className = 'notification-erreur';
+    notification.innerHTML = `
+        <div class="contenu-notification">
+            <span class="icone-erreur">⚠️</span>
+            <span class="message-erreur">${message}</span>
+            <button class="btn-fermer" onclick="this.parentNode.parentNode.remove()">×</button>
+        </div>
+    `;
+    
+    // Ajouter les styles
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #f8d7da;
+        color: #721c24;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 1000;
+        animation: slideIn 0.3s ease-out;
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Supprimer automatiquement après 5 secondes
+    setTimeout(() => {
+        if (notification.parentNode) {
+            notification.style.animation = 'slideOut 0.3s ease-out';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 300);
+        }
+    }, 5000);
+}
+
+/**
+ * Vérifie la compatibilité du navigateur
+ */
+function verifierCompatibilite() {
+    const fonctionnalitesRequises = [
+        'querySelector',
+        'addEventListener',
+        'Promise',
+        'fetch'
+    ];
+    
+    const fonctionnalitesManquantes = fonctionnalitesRequises.filter(
+        fonctionnalite => !(fonctionnalite in window || fonctionnalite in document)
+    );
+    
+    if (fonctionnalitesManquantes.length > 0) {
+        console.warn('⚠️ Fonctionnalités manquantes:', fonctionnalitesManquantes);
+        afficherMessageErreur('Votre navigateur ne supporte pas toutes les fonctionnalités requises');
+    } else {
+        console.log('✅ Navigateur compatible');
+    }
+}
+
+/**
+ * =============================================================================
+ * FONCTIONS D'ACCESSIBILITÉ
+ * =============================================================================
+ */
+
+/**
+ * Gère la navigation au clavier pour l'accessibilité
+ */
+function gererNavigationClavier(event) {
+    // Navigation avec les flèches dans le tableau
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || 
+        event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        
+        const elementActif = document.activeElement;
+        if (elementActif && elementActif.closest('.comparison-table')) {
+            event.preventDefault();
+            naviguerDansTableau(event.key, elementActif);
+        }
+    }
+    
+    // Raccourcis clavier
+    if (event.ctrlKey || event.metaKey) {
+        switch (event.key) {
+            case 'f':
+                event.preventDefault();
+                // Activer la recherche/filtrage
+                const champRecherche = document.querySelector('#recherche');
+                if (champRecherche) {
+                    champRecherche.focus();
+                }
+                break;
+                
+            case 'r':
+                event.preventDefault();
+                // Réinitialiser les filtres
+                reinitialiserFiltres();
+                break;
+        }
+    }
+    
+    // Échap pour fermer les éléments modaux
+    if (event.key === 'Escape') {
+        fermerElementsModaux();
+    }
+}
+
+/**
+ * Initialise les tooltips pour une meilleure accessibilité
+ */
+function initialiserTooltips() {
+    console.log('💬 Initialisation des tooltips');
+    
+    const elementsAvecTooltip = document.querySelectorAll('[title]');
+    
+    elementsAvecTooltip.forEach(element => {
+        // Sauvegarder le titre original
+        const titreOriginal = element.getAttribute('title');
+        element.removeAttribute('title'); // Éviter le tooltip natif
+        
+        // Créer le tooltip personnalisé
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip-personnalise';
+        tooltip.textContent = titreOriginal;
+        tooltip.style.cssText = `
+            position: absolute;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        `;
+        
+        document.body.appendChild(tooltip);
+        
+        // Événements pour afficher/masquer le tooltip
+        element.addEventListener('mouseenter', (e) => {
+            const rect = element.getBoundingClientRect();
+            tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight - 8 + 'px';
+            tooltip.style.opacity = '1';
+        });
+        
+        element.addEventListener('mouseleave', () => {
+            tooltip.style.opacity = '0';
+        });
+        
+        // Nettoyer le tooltip quand l'élément est supprimé
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.removedNodes.forEach((node) => {
+                    if (node === element && tooltip.parentNode) {
+                        tooltip.remove();
+                    }
+                });
+            });
+        });
+        
+        observer.observe(document.body, { childList: true, subtree: true });
+    });
+}
+
+/**
+ * =============================================================================
+ * GESTION RESPONSIVE ET OPTIMISATIONS
+ * =============================================================================
+ */
+
+/**
+ * Ajuste l'affichage en fonction de la taille d'écran
+ */
+function ajusterAffichageResponsive() {
+    const largeurEcran = window.innerWidth;
+    
+    console.log(`📱 Ajustement responsive pour ${largeurEcran}px`);
+    
+    // Ajustements pour mobile
+    if (largeurEcran < 768) {
+        activerModeMobile();
+    } else if (largeurEcran < 1024) {
+        activerModeTablette();
+    } else {
+        activerModeDesktop();
+    }
+}
+
+/**
+ * Active le mode d'affichage mobile
+ */
+function activerModeMobile() {
+    console.log('📱 Mode mobile activé');
+    
+    const tableau = document.querySelector('.comparison-table');
+    if (tableau) {
+        tableau.style.fontSize = '11px';
+    }
+    
+    // Masquer certaines colonnes moins importantes sur mobile
+    const colonnesMoinsImportantes = document.querySelectorAll('.colonne-secondaire');
+    colonnesMoinsImportantes.forEach(colonne => {
+        colonne.style.display = 'none';
+    });
+}
+
+/**
+ * Active le mode d'affichage tablette
+ */
+function activerModeTablette() {
+    console.log('📱 Mode tablette activé');
+    
+    const tableau = document.querySelector('.comparison-table');
+    if (tableau) {
+        tableau.style.fontSize = '12px';
+    }
+}
+
+/**
+ * Active le mode d'affichage desktop
+ */
+function activerModeDesktop() {
+    console.log('🖥️ Mode desktop activé');
+    
+    const tableau = document.querySelector('.comparison-table');
+    if (tableau) {
+        tableau.style.fontSize = '13px';
+    }
+    
+    // Réafficher toutes les colonnes
+    const colonnesMasquees = document.querySelectorAll('.colonne-secondaire');
+    colonnesMasquees.forEach(colonne => {
+        colonne.style.display = '';
+    });
+}
+
+/**
+ * =============================================================================
+ * OBSERVATEURS ET ANIMATIONS AU DÉFILEMENT
+ * =============================================================================
+ */
+
+/**
+ * Observe les éléments pour les animer lors du défilement
+ */
+function observerElementsAuDefilement() {
+    if ('IntersectionObserver' in window) {
+        const observateur = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    animerElement(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+        
+        // Observer les lignes du tableau
+        const lignesTableau = document.querySelectorAll('tr');
+        lignesTableau.forEach(ligne => {
+            observateur.observe(ligne);
+        });
+    }
+}
+
+/**
+ * Anime un élément spécifique
+ */
+function animerElement(element) {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(20px)';
+    element.style.transition = 'all 0.6s ease-out';
+    
+    setTimeout(() => {
+        element.style.opacity = '1';
+        element.style.transform = 'translateY(0)';
+    }, 100);
+}
+
+/**
+ * =============================================================================
+ * FONCTIONS SUPPLÉMENTAIRES ET GESTIONNAIRES
+ * =============================================================================
+ */
+
+/**
+ * Ajoute les gestionnaires de clic pour les éléments interactifs
+ */
+function ajouterGestionnairesClics() {
+    // Gestionnaire pour les liens externes (ouverture dans un nouvel onglet)
+    const liensExternes = document.querySelectorAll('a[href^="http"]');
+    liensExternes.forEach(lien => {
+        lien.addEventListener('click', (e) => {
+            // Ajouter un petit délai pour l'effet visuel
+            e.preventDefault();
+            setTimeout(() => {
+                window.open(lien.href, '_blank', 'noopener,noreferrer');
+            }, 150);
+        });
+    });
+}
+
+/**
+ * Gère les effets de défilement (parallax, header fixe, etc.)
+ */
+function gererEffetsDefilement() {
+    const positionDefilement = window.pageYOffset;
+    
+    // Effet parallax subtil sur l'en-tête
+    const entete = document.querySelector('.header');
+    if (entete) {
+        entete.style.transform = `translateY(${positionDefilement * 0.1}px)`;
+    }
+    
+    // Masquer/afficher un bouton "retour en haut"
+    const btnRetourHaut = document.querySelector('.btn-retour-haut');
+    if (btnRetourHaut) {
+        if (positionDefilement > 500) {
+            btnRetourHaut.style.opacity = '1';
+            btnRetourHaut.style.pointerEvents = 'all';
+        } else {
+            btnRetourHaut.style.opacity = '0';
+            btnRetourHaut.style.pointerEvents = 'none';
+        }
+    }
+}
+
+/**
+ * Configure les raccourcis clavier personnalisés
+ */
+function configurerRaccourcisClavier() {
+    console.log('⌨️ Configuration des raccourcis clavier');
+    
+    // Afficher l'aide des raccourcis avec F1
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'F1') {
+            e.preventDefault();
+            afficherAideRaccourcis();
+        }
+    });
+}
+
+/**
+ * Affiche l'aide des raccourcis clavier
+ */
+function afficherAideRaccourcis() {
+    const aide = `
+    🎯 RACCOURCIS CLAVIER DISPONIBLES :
+    
+    • Ctrl/Cmd + F : Activer la recherche
+    • Ctrl/Cmd + R : Réinitialiser les filtres  
+    • Échap : Fermer les éléments modaux
+    • F1 : Afficher cette aide
+    • ↑↓←→ : Naviguer dans le tableau
+    `;
+    
+    alert(aide);
+}
+
+/**
+ * =============================================================================
+ * INITIALISATION AU CHARGEMENT
+ * =============================================================================
+ */
+
+// Initialiser l'application dès que le DOM est prêt
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialiserApplication);
+} else {
+    // Le DOM est déjà chargé
+    initialiserApplication();
+}
+
+// Gestionnaire global pour les erreurs non interceptées
+window.addEventListener('unhandledrejection', (event) => {
+    console.error('🚨 Promise rejetée non gérée:', event.reason);
+    if (configurationApplication.debug) {
+        afficherMessageErreur(`Erreur Promise: ${event.reason}`);
+    }
+});
+
+/**
+ * =============================================================================
+ * EXPORT DES FONCTIONS PUBLIQUES (si module)
+ * =============================================================================
+ */
+
+// Si ce script est utilisé comme module, exporter les fonctions publiques
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        initialiserApplication,
+        configurationApplication,
+        animerJaugesBatterie,
+        afficherMessageErreur,
+        ajusterAffichageResponsive
+    };
+}
+
+// Exposer certaines fonctions globalement pour le débogage
+window.ComparaisonIA = {
+    version: configurationApplication.version,
+    reinitialiser: initialiserApplication,
+    animerBatteries: animerJaugesBatterie,
+    debug: (activer) => {
+        configurationApplication.debug = activer;
+        console.log(`🐛 Mode debug ${activer ? 'activé' : 'désactivé'}`);
+    }
 };
+
+console.log('📜 Script JavaScript chargé - Comparaison des Chatbots IA 2025');
