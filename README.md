@@ -1,4 +1,4 @@
-# Comparaison des Chatbots IA 2025 🤖⚡
+# Comparaison des Chatbots IA 2025 
 
 > **Analyse Complète de la Consommation Énergétique et des Performances des Modèles d'IA Leaders**
 
