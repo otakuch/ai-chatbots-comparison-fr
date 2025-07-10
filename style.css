@@ -1,3 +1,72 @@
+/* =============================================================================
+   COMPARAISON DES CHATBOTS IA 2025 - STYLES CSS
+   Analyse Complète de la Consommation Énergétique et des Performances
+   Par Naully Nicolas - Juillet 2025
+   ============================================================================= */
+
+/* Variables CSS pour la cohérence des couleurs et dimensions */
+:root {
+    /* Palette de couleurs principale */
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --header-gradient: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    --category-gradient: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    --card-gradient: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    
+    /* Couleurs de base */
+    --primary-blue: #3498db;
+    --dark-blue: #2c3e50;
+    --secondary-blue: #34495e;
+    --light-gray: #f8f9fa;
+    --border-gray: #dee2e6;
+    --text-dark: #2c3e50;
+    --text-medium: #555;
+    --white: #ffffff;
+    
+    /* Couleurs pour les jauges de batterie */
+    --battery-low: #27ae60;
+    --battery-medium: #f39c12;
+    --battery-high: #e67e22;
+    --battery-very-high: #e74c3c;
+    
+    /* Couleurs pour les notes */
+    --rating-a-bg: #d4edda;
+    --rating-a-text: #155724;
+    --rating-b-bg: #d1ecf1;
+    --rating-b-text: #0c5460;
+    --rating-c-bg: #fff3cd;
+    --rating-c-text: #856404;
+    --rating-d-bg: #f8d7da;
+    --rating-d-text: #721c24;
+    
+    /* Couleurs pour avantages/inconvénients */
+    --pros-color: #27ae60;
+    --cons-color: #e74c3c;
+    --best-for-bg: #e8f5e8;
+    --avoid-when-bg: #ffeaea;
+    
+    /* Dimensions et espacements */
+    --border-radius: 20px;
+    --border-radius-small: 10px;
+    --border-radius-tiny: 4px;
+    --shadow-main: 0 20px 40px rgba(0,0,0,0.1);
+    --shadow-hover: 0 5px 15px rgba(0,0,0,0.1);
+    --transition-speed: 0.3s;
+    
+    /* Typographie */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-large: 2.8rem;
+    --font-size-medium: 1.3rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.85rem;
+    --font-size-tiny: 0.7rem;
+    
+    /* Dimensions du tableau */
+    --table-min-width: 1600px;
+    --header-height: 140px;
+    --battery-width: 50px;
+    --battery-height: 16px;
+}
+
 /* Reset CSS global */
 * {
     margin: 0;
@@ -5,115 +74,185 @@
     box-sizing: border-box;
 }
 
-/* Styles principaux du body */
+/* Styles de base du body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: var(--font-family);
+    background: var(--primary-gradient);
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
+    color: var(--text-dark);
 }
 
-/* Container principal */
+/* Conteneur principal */
 .container {
     max-width: 2000px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-main);
     overflow: hidden;
+    backdrop-filter: blur(10px);
 }
 
-/* En-tête du site */
+/* =============================================================================
+   STYLES DE L'EN-TÊTE
+   ============================================================================= */
+
 .header {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-    color: white;
+    background: var(--header-gradient);
+    color: var(--white);
     padding: 40px 20px;
     text-align: center;
+    position: relative;
 }
 
 .header h1 {
-    font-size: 2.8rem;
+    font-size: var(--font-size-large);
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
 }
 
 .header .subtitle {
-    font-size: 1.3rem;
+    font-size: var(--font-size-medium);
     opacity: 0.9;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .header .meta {
     font-size: 1.1rem;
     opacity: 0.8;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .header .intro {
-    font-size: 1rem;
+    font-size: var(--font-size-normal);
     opacity: 0.85;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.7;
+    font-weight: 300;
 }
 
-/* Container pour le tableau avec scroll horizontal */
+/* Bouton de changement de langue (désactivé) */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all var(--transition-speed) ease;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.language-toggle:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+/* =============================================================================
+   STYLES DU TABLEAU
+   ============================================================================= */
+
 .table-container {
     overflow-x: auto;
     padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-blue) var(--light-gray);
 }
 
-/* Tableau de comparaison principal */
+/* Styles pour la barre de défilement WebKit */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: var(--border-radius-tiny);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: var(--border-radius-tiny);
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+/* Tableau principal */
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
-    min-width: 1600px;
+    min-width: var(--table-min-width);
+    box-shadow: var(--shadow-hover);
+    border-radius: var(--border-radius-small);
+    overflow: hidden;
 }
 
 /* En-têtes des modèles */
 .model-header {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border: 2px solid #dee2e6;
+    background: var(--card-gradient);
+    border: 2px solid var(--border-gray);
     padding: 20px 15px;
     text-align: center;
     vertical-align: top;
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 140px;
+    height: var(--header-height);
+    transition: all var(--transition-speed) ease;
+}
+
+.model-header:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+    transform: translateY(-2px);
 }
 
 .model-header h3 {
-    font-size: 1.3rem;
+    font-size: var(--font-size-medium);
     margin-bottom: 8px;
-    color: #2c3e50;
+    color: var(--text-dark);
     line-height: 1.2;
+    font-weight: 600;
 }
 
 .model-header a {
-    color: #3498db;
+    color: var(--primary-blue);
     text-decoration: none;
     font-weight: 500;
     margin-bottom: 8px;
     display: block;
     font-size: 0.9rem;
+    transition: color var(--transition-speed) ease;
 }
 
 .model-header a:hover {
     text-decoration: underline;
+    color: var(--dark-blue);
 }
 
 .model-header .flag {
     font-size: 1.8rem;
     margin-top: 8px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
 }
 
-/* Lignes de catégories */
+/* Lignes de catégorie */
 .category-row {
-    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
-    color: white;
+    background: var(--category-gradient);
+    color: var(--white);
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -121,39 +260,47 @@ body {
 .category-row td {
     padding: 15px;
     text-align: center;
-    border: 1px solid #34495e;
+    border: 1px solid var(--secondary-blue);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* Cellules de données */
 .data-cell {
     padding: 12px;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--border-gray);
     vertical-align: top;
-    background: #ffffff;
-    transition: background-color 0.3s ease;
+    background: var(--white);
+    transition: all var(--transition-speed) ease;
+    position: relative;
 }
 
 .data-cell:hover {
-    background: #f8f9fa;
+    background: var(--light-gray);
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Jauges de batterie pour l'énergie */
+/* =============================================================================
+   JAUGES DE BATTERIE
+   ============================================================================= */
+
 .battery-gauge {
     display: flex;
     align-items: center;
     gap: 8px;
     margin: 3px 0;
-    font-size: 0.85rem;
+    font-size: var(--font-size-small);
 }
 
 .battery {
-    width: 50px;
-    height: 16px;
+    width: var(--battery-width);
+    height: var(--battery-height);
     border: 2px solid #333;
     border-radius: 3px;
     position: relative;
     background: #f0f0f0;
     overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .battery::after {
@@ -168,133 +315,309 @@ body {
     border-radius: 0 2px 2px 0;
 }
 
-/* Niveaux de remplissage des batteries */
 .battery-fill {
     height: 100%;
     border-radius: 1px;
     transition: width 0.5s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.battery-fill.low { background: #27ae60; }
-.battery-fill.medium { background: #f39c12; }
-.battery-fill.high { background: #e67e22; }
-.battery-fill.very-high { background: #e74c3c; }
+.battery-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0.2) 0%, 
+        transparent 50%, 
+        rgba(255,255,255,0.2) 100%);
+    animation: shimmer 2s infinite;
+}
 
-/* Étiquettes et valeurs des métriques */
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Couleurs des jauges selon le niveau */
+.battery-fill.low { 
+    background: var(--battery-low);
+}
+
+.battery-fill.medium { 
+    background: var(--battery-medium);
+}
+
+.battery-fill.high { 
+    background: var(--battery-high);
+}
+
+.battery-fill.very-high { 
+    background: var(--battery-very-high);
+}
+
+/* =============================================================================
+   MÉTRIQUES ET LABELS
+   ============================================================================= */
+
 .metric-label {
     font-weight: 500;
-    color: #2c3e50;
-    font-size: 0.85rem;
+    color: var(--text-dark);
+    font-size: var(--font-size-small);
+    margin-bottom: 2px;
 }
 
 .metric-value {
     font-size: 0.8rem;
-    color: #555;
+    color: var(--text-medium);
+    font-weight: 600;
 }
 
-/* Système de notation par lettres */
+/* Scores de performance */
+.score {
+    font-weight: bold;
+    color: var(--text-dark);
+    font-size: var(--font-size-normal);
+    padding: 4px 8px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: var(--border-radius-tiny);
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* =============================================================================
+   SYSTÈME DE NOTATION
+   ============================================================================= */
+
 .rating {
     display: inline-block;
     padding: 3px 6px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     font-weight: bold;
     font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform var(--transition-speed) ease;
 }
 
-.rating.A { background: #d4edda; color: #155724; }
-.rating.B { background: #d1ecf1; color: #0c5460; }
-.rating.C { background: #fff3cd; color: #856404; }
-.rating.D { background: #f8d7da; color: #721c24; }
-.rating.F { background: #f8d7da; color: #721c24; }
+.rating:hover {
+    transform: scale(1.1);
+}
 
-/* Sections avantages/inconvénients */
+.rating.A { 
+    background: var(--rating-a-bg); 
+    color: var(--rating-a-text); 
+}
+
+.rating.B { 
+    background: var(--rating-b-bg); 
+    color: var(--rating-b-text); 
+}
+
+.rating.C { 
+    background: var(--rating-c-bg); 
+    color: var(--rating-c-text); 
+}
+
+.rating.D { 
+    background: var(--rating-d-bg); 
+    color: var(--rating-d-text); 
+}
+
+.rating.F { 
+    background: var(--rating-d-bg); 
+    color: var(--rating-d-text); 
+}
+
+/* =============================================================================
+   AVANTAGES ET INCONVÉNIENTS
+   ============================================================================= */
+
 .pros-cons {
     text-align: left;
+    padding: 8px;
+    border-radius: var(--border-radius-tiny);
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
 }
 
 .pros-cons h4 {
-    color: #2c3e50;
+    color: var(--text-dark);
     margin-bottom: 6px;
     font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .pros-cons ul {
     margin-left: 16px;
     margin-bottom: 10px;
+    list-style-type: none;
 }
 
 .pros-cons li {
     margin-bottom: 3px;
     font-size: 0.8rem;
+    position: relative;
+    padding-left: 15px;
 }
 
-.pros { color: #27ae60; }
-.cons { color: #e74c3c; }
+.pros-cons li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
-/* Encadrés recommandations */
+.pros { 
+    color: var(--pros-color); 
+}
+
+.pros li::before {
+    color: var(--pros-color);
+}
+
+.cons { 
+    color: var(--cons-color); 
+}
+
+.cons li::before {
+    color: var(--cons-color);
+}
+
+/* Encadrés pour recommandations */
 .best-for {
-    background: #e8f5e8;
+    background: var(--best-for-bg);
     padding: 6px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-tiny);
     margin: 6px 0;
     font-size: 0.8rem;
+    border-left: 3px solid var(--pros-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .avoid-when {
-    background: #ffeaea;
+    background: var(--avoid-when-bg);
     padding: 6px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-tiny);
     margin: 6px 0;
     font-size: 0.8rem;
+    border-left: 3px solid var(--cons-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Badges de fonctionnalités */
+/* =============================================================================
+   BADGES ET FONCTIONNALITÉS
+   ============================================================================= */
+
 .feature-badge {
     display: inline-block;
-    background: #3498db;
-    color: white;
+    background: var(--primary-blue);
+    color: var(--white);
     padding: 2px 5px;
     border-radius: 8px;
-    font-size: 0.7rem;
+    font-size: var(--font-size-tiny);
     margin: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: all var(--transition-speed) ease;
 }
 
-/* Scores généraux */
-.score {
-    font-weight: bold;
-    color: #2c3e50;
-    font-size: 1rem;
+.feature-badge:hover {
+    background: var(--dark-blue);
+    transform: scale(1.05);
 }
 
-/* Pied de page */
+/* Badges spécialisés */
+.feature-badge.multimodal {
+    background: #9b59b6;
+}
+
+.feature-badge.api {
+    background: #e67e22;
+}
+
+.feature-badge.open-source {
+    background: #27ae60;
+}
+
+.feature-badge.enterprise {
+    background: #34495e;
+}
+
+/* =============================================================================
+   PIED DE PAGE
+   ============================================================================= */
+
 .footer {
-    background: #2c3e50;
-    color: white;
+    background: var(--dark-blue);
+    color: var(--white);
     padding: 30px;
     text-align: center;
+    border-top: 3px solid var(--primary-blue);
 }
 
 .footer p {
     margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 .footer a {
-    color: #3498db;
+    color: var(--primary-blue);
     text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-speed) ease;
 }
 
 .footer a:hover {
     text-decoration: underline;
+    color: #74b9ff;
 }
 
-/* Design responsive pour mobiles */
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .comparison-table {
+        font-size: 12px;
+    }
+    
+    .model-header {
+        padding: 15px 10px;
+        height: 120px;
+    }
+    
+    .model-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobiles */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
     .header h1 {
         font-size: 2.2rem;
     }
     
     .header .subtitle {
         font-size: 1.1rem;
+    }
+    
+    .header .intro {
+        font-size: 0.9rem;
     }
     
     .table-container {
@@ -305,18 +628,167 @@ body {
         font-size: 11px;
     }
     
+    .model-header {
+        padding: 10px 8px;
+        height: 100px;
+    }
+    
     .model-header h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    .model-header .flag {
+        font-size: 1.4rem;
     }
     
     .data-cell {
         padding: 8px;
     }
+    
+    .battery {
+        width: 40px;
+        height: 14px;
+    }
+    
+    .pros-cons {
+        padding: 6px;
+    }
+    
+    .language-toggle {
+        position: static;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
 }
 
-/* Classes utilitaires */
+/* Très petits écrans */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header .subtitle {
+        font-size: 1rem;
+    }
+    
+    .comparison-table {
+        font-size: 10px;
+    }
+    
+    .model-header h3 {
+        font-size: 0.9rem;
+    }
+    
+    .data-cell {
+        padding: 6px;
+    }
+}
+
+/* =============================================================================
+   ANIMATIONS ET EFFETS
+   ============================================================================= */
+
+/* Animation de fade-in pour le chargement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Animation pour les éléments hover */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+.model-header:hover {
+    animation: pulse 0.6s;
+}
+
+/* Animation pour les jauges de batterie */
+@keyframes fillBattery {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--final-width);
+    }
+}
+
+/* =============================================================================
+   UTILITAIRES
+   ============================================================================= */
+
+/* Classes utilitaires pour l'alignement */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
-.fw-bold { font-weight: bold; }
-.small { font-size: 0.8rem; }
+
+/* Classes utilitaires pour les marges */
+.mt-10 { margin-top: 10px; }
+.mb-10 { margin-bottom: 10px; }
+.mr-10 { margin-right: 10px; }
+.ml-10 { margin-left: 10px; }
+
+/* Classes utilitaires pour les couleurs */
+.text-primary { color: var(--primary-blue); }
+.text-success { color: var(--battery-low); }
+.text-warning { color: var(--battery-medium); }
+.text-danger { color: var(--battery-very-high); }
+
+/* Classes utilitaires pour l'affichage */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+
+/* =============================================================================
+   PRINT STYLES
+   ============================================================================= */
+
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+    
+    .header {
+        background: white;
+        color: black;
+        border-bottom: 2px solid #333;
+    }
+    
+    .language-toggle {
+        display: none;
+    }
+    
+    .comparison-table {
+        font-size: 10px;
+    }
+    
+    .battery-fill {
+        background: #666 !important;
+    }
+    
+    .category-row {
+        background: #f0f0f0;
+        color: black;
+    }
+}
