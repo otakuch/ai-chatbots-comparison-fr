@@ -1,0 +1,322 @@
+/* Reset CSS global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles principaux du body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* En-tête du site */
+.header {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.header .meta {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.header .intro {
+    font-size: 1rem;
+    opacity: 0.85;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Container pour le tableau avec scroll horizontal */
+.table-container {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Tableau de comparaison principal */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 1600px;
+}
+
+/* En-têtes des modèles */
+.model-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #dee2e6;
+    padding: 20px 15px;
+    text-align: center;
+    vertical-align: top;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 140px;
+}
+
+.model-header h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.model-header a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.model-header a:hover {
+    text-decoration: underline;
+}
+
+.model-header .flag {
+    font-size: 1.8rem;
+    margin-top: 8px;
+}
+
+/* Lignes de catégories */
+.category-row {
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.category-row td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #34495e;
+}
+
+/* Cellules de données */
+.data-cell {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    vertical-align: top;
+    background: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.data-cell:hover {
+    background: #f8f9fa;
+}
+
+/* Jauges de batterie pour l'énergie */
+.battery-gauge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 3px 0;
+    font-size: 0.85rem;
+}
+
+.battery {
+    width: 50px;
+    height: 16px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    position: relative;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+
+.battery::after {
+    content: '';
+    width: 3px;
+    height: 10px;
+    background: #333;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 2px 2px 0;
+}
+
+/* Niveaux de remplissage des batteries */
+.battery-fill {
+    height: 100%;
+    border-radius: 1px;
+    transition: width 0.5s ease;
+}
+
+.battery-fill.low { background: #27ae60; }
+.battery-fill.medium { background: #f39c12; }
+.battery-fill.high { background: #e67e22; }
+.battery-fill.very-high { background: #e74c3c; }
+
+/* Étiquettes et valeurs des métriques */
+.metric-label {
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 0.85rem;
+}
+
+.metric-value {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Système de notation par lettres */
+.rating {
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.rating.A { background: #d4edda; color: #155724; }
+.rating.B { background: #d1ecf1; color: #0c5460; }
+.rating.C { background: #fff3cd; color: #856404; }
+.rating.D { background: #f8d7da; color: #721c24; }
+.rating.F { background: #f8d7da; color: #721c24; }
+
+/* Sections avantages/inconvénients */
+.pros-cons {
+    text-align: left;
+}
+
+.pros-cons h4 {
+    color: #2c3e50;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.pros-cons ul {
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.pros-cons li {
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+}
+
+.pros { color: #27ae60; }
+.cons { color: #e74c3c; }
+
+/* Encadrés recommandations */
+.best-for {
+    background: #e8f5e8;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 6px 0;
+    font-size: 0.8rem;
+}
+
+.avoid-when {
+    background: #ffeaea;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 6px 0;
+    font-size: 0.8rem;
+}
+
+/* Badges de fonctionnalités */
+.feature-badge {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    margin: 1px;
+}
+
+/* Scores généraux */
+.score {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+/* Pied de page */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Design responsive pour mobiles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .header .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .table-container {
+        padding: 10px;
+    }
+    
+    .comparison-table {
+        font-size: 11px;
+    }
+    
+    .model-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .data-cell {
+        padding: 8px;
+    }
+}
+
+/* Classes utilitaires */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.fw-bold { font-weight: bold; }
+.small { font-size: 0.8rem; }
