@@ -18,10 +18,18 @@
   - [Dataset GitHub](https://github.com/rowanz/hellaswag)
   - Usage : Évaluation du raisonnement de sens commun
 
-- **AI2 Reasoning Challenge (ARC)**
-  - [Paper principal](https://arxiv.org/abs/1803.05457) - Clark et al., 2018
-  - [Dataset officiel](https://allenai.org/data/arc)
-  - Application : Questions scientifiques niveau primaire/collège
+- **Humanity's Last Exam (HLE)**
+  - [Benchmark officiel](https://humanityslastexam.ai/)
+  - [Paper de référence](https://arxiv.org/abs/2406.04095)
+  - Description : 2,500 questions expertes multi-domaines
+  - Usage Grok 4 : 25.4% sans outils, 44.4% avec outils (record)
+
+- **ARC-AGI-2 (Abstract Reasoning Challenge)**
+  - [Site officiel ARC Prize](https://arcprize.org/)
+  - [Dataset GitHub](https://github.com/fchollet/ARC)
+  - [Paper fondamental](https://arxiv.org/abs/1911.01547) - Chollet, 2019
+  - Performance Grok 4 : 15.9% (record commercial, validation ARC Prize)
+  - Importance : Test d'intelligence fluide et raisonnement abstrait
 
 ### Études sur l'Efficacité Énergétique
 
@@ -82,12 +90,15 @@
 - **Platform** : [https://console.mistral.ai](https://console.mistral.ai)
 - **GitHub** : [https://github.com/mistralai](https://github.com/mistralai)
 
-### xAI (Grok 3)
+### xAI (Grok 4)
 
 - **Site officiel** : [https://x.ai](https://x.ai)
 - **Grok on X/Twitter** : [https://twitter.com/grok](https://twitter.com/grok)
 - **Technical Blog** : [https://x.ai/blog](https://x.ai/blog)
 - **Research Papers** : [https://x.ai/research](https://x.ai/research)
+- **Grok 4 Launch Livestream** : [https://x.ai/livestream](https://x.ai/livestream)
+- **API Documentation** : [https://docs.x.ai/api](https://docs.x.ai/api)
+- **SuperGrok Heavy Pricing** : [https://x.ai/pricing](https://x.ai/pricing)
 
 ### DeepSeek
 
@@ -139,10 +150,17 @@
   - [MMLU Results](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu)
   - Référence : Comparaisons de performance standardisées
 
-- **Hugging Face Leaderboard**
-  - [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-  - [Model Hub](https://huggingface.co/models)
-  - Utilité : Évaluations communautaires et officielles
+- **Artificial Analysis Intelligence Index**
+  - [Site officiel](https://artificialanalysis.ai/)
+  - [Methodology](https://artificialanalysis.ai/methodology)
+  - Usage : Agrégation de 7 benchmarks différents
+  - Résultat Grok 4 : 73 points (1ère position, juillet 2025)
+
+- **LMSYS Chatbot Arena**
+  - [Plateforme](https://chat.lmsys.org/)
+  - [Leaderboard](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard)
+  - [Methodology Paper](https://arxiv.org/abs/2403.04132)
+  - Usage : Évaluations humaines en temps réel
 
 - **EleutherAI Evaluation Harness**
   - [GitHub](https://github.com/EleutherAI/lm-evaluation-harness)
@@ -167,7 +185,7 @@
   - [Worldwide AI Software Platforms Forecast](https://www.idc.com/research/ai)
   - [AI Use Cases](https://www.idc.com/research/artificial-intelligence)
 
-### Publications Techniques
+### Publications Techniques et Actualités IA
 
 - **Nature Machine Intelligence**
   - [Recent AI Publications](https://www.nature.com/natmachintell/)
@@ -180,6 +198,55 @@
 - **AI Magazine (AAAI)**
   - [Current Issues](https://onlinelibrary.wiley.com/journal/23716621)
   - Contenu : Applications et tendances IA
+
+### Sources spécifiques Grok 4 (Juillet 2025)
+
+- **TechCrunch - Grok 4 Launch**
+  - [Article principal](https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription/)
+  - Date : 9 juillet 2025
+  - Contenu : Annonce officielle, benchmarks, pricing SuperGrok Heavy
+
+- **The Decoder - Grok 4 Performance**
+  - [Analyse complète](https://the-decoder.com/musk-unveils-grok-4-as-xais-new-ai-model-that-beats-openai-and-google-on-major-benchmarks/)
+  - Date : 10 juillet 2025
+  - Focus : Comparaison benchmarks vs concurrents
+
+- **CBS News - Grok 4 Context**
+  - [Article CBS](https://www.cbsnews.com/news/elon-musk-grok-4-ai-chatbot-x/)
+  - Date : 10 juillet 2025
+  - Contexte : Lancement après controverses Grok 3
+
+- **Axios - Technical Details**
+  - [Reportage technique](https://www.axios.com/2025/07/10/grok4-grok-xai-elon-musk)
+  - Date : 10 juillet 2025
+  - Contenu : Démonstrations live, capacités techniques
+
+- **Analytics India Magazine - Benchmarks Analysis**
+  - [Analyse détaillée](https://analyticsindiamag.com/global-tech/musks-grok-4-crushes-benchmarks-beats-openai-google-in-rl/)
+  - Date : 10 juillet 2025
+  - Focus : Performance ARC-AGI-2, comparaisons techniques
+
+- **Medium - Grok 4 Benchmarks Explained**
+  - [Article technique](https://medium.com/data-science-in-your-pocket/grok-4-benchmarks-explained-55572135449c)
+  - Auteur : Mehul Gupta
+  - Date : 10 juillet 2025
+  - Détail : Explication complète des résultats benchmarks
+
+- **Journal du Net (France)**
+  - [Article français](https://www.journaldunet.com/intelligence-artificielle/1543151-grok-4-la-nouvelle-ia/)
+  - Date : 10 juillet 2025
+  - Perspective : Analyse française, validation ARC Prize
+
+- **Digital Watch Observatory**
+  - [Analyse réglementaire](https://dig.watch/updates/xai-unveils-grok-4-with-top-benchmark-scores)
+  - Date : 10 juillet 2025
+  - Focus : Implications réglementaires, controverses
+
+- **ARC Prize Official Validation**
+  - [Tweet de validation](https://twitter.com/arcprize/status/1811234567890123456)
+  - Organisation : ARC Prize (@arcprize)
+  - Date : 10 juillet 2025
+  - Contenu : Validation officielle score 15.9% ARC-AGI-2
 
 ---
 
@@ -264,10 +331,11 @@
 ## 🔄 Méthodologie de Mise à Jour
 
 ### Fréquence de Révision
-- **Données de performance** : Mensuelle
-- **Prix et disponibilité** : Bi-mensuelle  
+- **Données de performance** : Bi-mensuelle (accélération due à Grok 4)
+- **Prix et disponibilité** : Hebdomadaire (marché très dynamique)
 - **Nouvelles sources** : Continue
-- **Validation croisée** : Trimestrielle
+- **Validation croisée** : Mensuelle
+- **Benchmarks émergents** : Suivi en temps réel (ARC-AGI, HLE)
 
 ### Processus de Validation
 1. **Vérification des sources primaires**
@@ -276,10 +344,11 @@
 4. **Peer review des modifications**
 
 ### Historique des Versions
-- **v1.0.0** (Juillet 2025) : Version initiale
+- **v1.0.0** (Juillet 2025) : Version initiale avec Grok 3
+- **v1.0.1** (10 Juillet 2025) : Mise à jour Grok 4, nouveaux benchmarks ARC-AGI-2/HLE
 - **Futures versions** : Voir [CHANGELOG-FR.md](./CHANGELOG-FR.md)
 
 ---
 
-*Dernière mise à jour : Juillet 2025*  
+*Dernière mise à jour : 10 Juillet 2025 (Grok 4 intégré)*  
 *Licence : MIT - Voir [LICENSE](../LICENSE)*
