@@ -1,0 +1,772 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "dateCreation": "2025-07-10",
+    "langue": "français",
+    "auteur": "Naully Nicolas",
+    "description": "Données complètes des modèles d'IA pour la comparaison des chatbots 2025"
+  },
+  "modeles": {
+    "chatgpt4o": {
+      "nom": "ChatGPT-4o",
+      "entreprise": "OpenAI",
+      "url": "https://chat.openai.com",
+      "pays": "🇺🇸",
+      "informationsModele": {
+        "dateSortie": "Mai 2024",
+        "parametres": "~1,8T",
+        "architecture": "Transformer",
+        "typeModele": "Multimodal",
+        "contexteMaximal": "128,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0029,
+          "unite": "kWh",
+          "description": "Par 1000 mots",
+          "noteVisuelle": "very-high",
+          "pourcentage": 80
+        },
+        "generationImage": {
+          "valeur": 0.012,
+          "unite": "kWh",
+          "description": "Par image",
+          "noteVisuelle": "high",
+          "pourcentage": 70
+        },
+        "generationVideo": {
+          "valeur": 0.45,
+          "unite": "kWh",
+          "description": "Par 30 secondes",
+          "noteVisuelle": "very-high",
+          "pourcentage": 90
+        },
+        "energieEntrainement": {
+          "valeur": 4300,
+          "unite": "MWh",
+          "noteVisuelle": "very-high",
+          "pourcentage": 90
+        },
+        "empreinteCarbone": {
+          "valeur": 4.32,
+          "unite": "g CO₂/requête",
+          "noteVisuelle": "very-high",
+          "pourcentage": 85
+        },
+        "noteEnvironnementale": "C+"
+      },
+      "metriquesPerformance": {
+        "benchmarkMMLU": {
+          "valeur": 87.2,
+          "unite": "%",
+          "description": "Performance sur les tâches académiques"
+        },
+        "latenceReponse": {
+          "valeur": 850,
+          "unite": "ms",
+          "description": "Temps de réponse moyen"
+        },
+        "fenetreContextuelle": {
+          "valeur": 128000,
+          "unite": "jetons",
+          "description": "Contexte maximal supporté"
+        },
+        "noteQualite": "A-",
+        "scorePrecision": 92.5
+      },
+      "facteursEconomiques": {
+        "prixAPI": {
+          "entree": 0.005,
+          "sortie": 0.015,
+          "unite": "$/1K jetons"
+        },
+        "coutParRequete": 0.025,
+        "noteValeur": "B+",
+        "abonnementMensuel": {
+          "gratuit": true,
+          "premium": 20,
+          "entreprise": 30
+        }
+      },
+      "capacitesTechniques": {
+        "supportMultimodal": ["texte", "image", "audio", "video"],
+        "langagesProgrammation": ["Python", "JavaScript", "Java", "C++", "Go", "Rust", "SQL"],
+        "fonctionnalitesSpeciales": [
+          "Génération d'images DALL-E",
+          "Analyse de documents",
+          "Navigation web",
+          "Exécution de code",
+          "Plugins tiers"
+        ],
+        "integrations": ["API REST", "Zapier", "Microsoft Office", "Google Workspace"]
+      },
+      "accessibiliteDeploiement": {
+        "disponibilitePlateforme": ["Web", "Mobile iOS", "Mobile Android", "API"],
+        "regionsGeographiques": ["Amérique du Nord", "Europe", "Asie-Pacifique", "Amérique du Sud"],
+        "limitesTaux": {
+          "gratuit": "3 requêtes/heure",
+          "premium": "40 requêtes/3h",
+          "api": "10,000 requêtes/min"
+        },
+        "supportLangues": 95
+      },
+      "conformiteDonnees": {
+        "conformiteRGPD": true,
+        "classificationAIActUE": "Haut risque",
+        "localisationDonnees": "États-Unis",
+        "chiffrementDonnees": true,
+        "noteConfidentialite": "B+",
+        "certifications": ["SOC 2", "ISO 27001"]
+      },
+      "experienceUtilisateur": {
+        "faciliteUtilisation": 9.2,
+        "preferencesDeveloppeurs": 8.8,
+        "frequenceMiseAJour": "Hebdomadaire",
+        "qualiteDocumentation": 9.5,
+        "supportCommunaute": "Excellent"
+      },
+      "avantagesInconvenients": {
+        "pointsForts": [
+          "Performance leader du secteur",
+          "Capacités multimodales avancées",
+          "Écosystème riche d'outils",
+          "Documentation excellente",
+          "Large communauté de développeurs"
+        ],
+        "limitations": [
+          "Consommation énergétique élevée",
+          "Coût par requête important",
+          "Latence parfois élevée",
+          "Dépendance aux serveurs OpenAI",
+          "Limitations de données temps réel"
+        ],
+        "idealePour": [
+          "Applications d'entreprise",
+          "Recherche avancée",
+          "Créativité et génération de contenu",
+          "Développement de produits IA",
+          "Prototypage rapide"
+        ],
+        "aEviterQuand": [
+          "Budget limité",
+          "Applications simples",
+          "Contraintes énergétiques strictes",
+          "Exigences de latence ultra-faible",
+          "Données sensibles sans chiffrement"
+        ]
+      }
+    },
+    "claudeSonnet4": {
+      "nom": "Claude Sonnet 4",
+      "entreprise": "Anthropic",
+      "url": "https://claude.ai",
+      "pays": "🇺🇸",
+      "informationsModele": {
+        "dateSortie": "Mai 2025",
+        "parametres": "~200B",
+        "architecture": "IA Constitutionnelle",
+        "typeModele": "Conversationnel",
+        "contexteMaximal": "200,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0008,
+          "unite": "kWh",
+          "description": "Par 1000 mots",
+          "noteVisuelle": "low",
+          "pourcentage": 20
+        },
+        "generationImage": {
+          "valeur": 0.008,
+          "unite": "kWh",
+          "description": "Par image",
+          "noteVisuelle": "medium",
+          "pourcentage": 35
+        },
+        "generationVideo": {
+          "valeur": null,
+          "unite": "kWh",
+          "description": "Non disponible",
+          "noteVisuelle": "none",
+          "pourcentage": 0
+        },
+        "energieEntrainement": {
+          "valeur": 1200,
+          "unite": "MWh",
+          "noteVisuelle": "low",
+          "pourcentage": 25
+        },
+        "empreinteCarbone": {
+          "valeur": 1.25,
+          "unite": "g CO₂/requête",
+          "noteVisuelle": "low",
+          "pourcentage": 18
+        },
+        "noteEnvironnementale": "A"
+      },
+      "metriquesPerformance": {
+        "benchmarkMMLU": {
+          "valeur": 89.1,
+          "unite": "%",
+          "description": "Performance sur les tâches académiques"
+        },
+        "latenceReponse": {
+          "valeur": 650,
+          "unite": "ms",
+          "description": "Temps de réponse moyen"
+        },
+        "fenetreContextuelle": {
+          "valeur": 200000,
+          "unite": "jetons",
+          "description": "Contexte maximal supporté"
+        },
+        "noteQualite": "A",
+        "scorePrecision": 94.2
+      },
+      "facteursEconomiques": {
+        "prixAPI": {
+          "entree": 0.003,
+          "sortie": 0.015,
+          "unite": "$/1K jetons"
+        },
+        "coutParRequete": 0.022,
+        "noteValeur": "A-",
+        "abonnementMensuel": {
+          "gratuit": true,
+          "premium": 20,
+          "entreprise": null
+        }
+      },
+      "capacitesTechniques": {
+        "supportMultimodal": ["texte", "image", "documents"],
+        "langagesProgrammation": ["Python", "JavaScript", "Java", "C++", "Go", "Rust", "SQL", "R"],
+        "fonctionnalitesSpeciales": [
+          "Raisonnement éthique avancé",
+          "Analyse de documents complexes",
+          "Génération de code optimisée",
+          "Traduction haute qualité",
+          "Analyse critique"
+        ],
+        "integrations": ["API REST", "Slack", "Discord"]
+      },
+      "accessibiliteDeploiement": {
+        "disponibilitePlateforme": ["Web", "API"],
+        "regionsGeographiques": ["Amérique du Nord", "Europe", "Asie-Pacifique"],
+        "limitesTaux": {
+          "gratuit": "5 requêtes/heure",
+          "premium": "100 requêtes/heure",
+          "api": "5,000 requêtes/min"
+        },
+        "supportLangues": 75
+      },
+      "conformiteDonnees": {
+        "conformiteRGPD": true,
+        "classificationAIActUE": "Risque limité",
+        "localisationDonnees": "États-Unis",
+        "chiffrementDonnees": true,
+        "noteConfidentialite": "A",
+        "certifications": ["SOC 2", "ISO 27001", "FedRAMP"]
+      },
+      "experienceUtilisateur": {
+        "faciliteUtilisation": 9.5,
+        "preferencesDeveloppeurs": 9.2,
+        "frequenceMiseAJour": "Mensuelle",
+        "qualiteDocumentation": 9.0,
+        "supportCommunaute": "Très bon"
+      },
+      "avantagesInconvenients": {
+        "pointsForts": [
+          "Excellent rapport performance/énergie",
+          "Sécurité et éthique renforcées",
+          "Raisonnement de haute qualité",
+          "Contexte très long supporté",
+          "Réponses nuancées et réfléchies"
+        ],
+        "limitations": [
+          "Capacités multimodales limitées",
+          "Écosystème moins développé",
+          "Prix premium",
+          "Pas de génération vidéo",
+          "Disponibilité géographique restreinte"
+        ],
+        "idealePour": [
+          "Analyse et recherche",
+          "Rédaction professionnelle",
+          "Tâches complexes de raisonnement",
+          "Applications éthiques critiques",
+          "Développement assisté"
+        ],
+        "aEviterQuand": [
+          "Génération d'images requise",
+          "Intégrations tierces nombreuses",
+          "Budget très serré",
+          "Besoins multimodaux étendus",
+          "Déploiement global immédiat"
+        ]
+      }
+    },
+    "geminiPro": {
+      "nom": "Gemini Pro",
+      "entreprise": "Google",
+      "url": "https://gemini.google.com",
+      "pays": "🇺🇸",
+      "informationsModele": {
+        "dateSortie": "Février 2024",
+        "parametres": "~540B",
+        "architecture": "Gemini",
+        "typeModele": "Multimodal",
+        "contexteMaximal": "1,000,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0015,
+          "unite": "kWh",
+          "description": "Par 1000 mots",
+          "noteVisuelle": "medium",
+          "pourcentage": 45
+        },
+        "generationImage": {
+          "valeur": 0.010,
+          "unite": "kWh",
+          "description": "Par image",
+          "noteVisuelle": "medium",
+          "pourcentage": 50
+        },
+        "generationVideo": {
+          "valeur": 0.42,
+          "unite": "kWh",
+          "description": "Par 30 secondes",
+          "noteVisuelle": "very-high",
+          "pourcentage": 85
+        },
+        "energieEntrainement": {
+          "valeur": 2800,
+          "unite": "MWh",
+          "noteVisuelle": "high",
+          "pourcentage": 70
+        },
+        "empreinteCarbone": {
+          "valeur": 2.18,
+          "unite": "g CO₂/requête",
+          "noteVisuelle": "medium",
+          "pourcentage": 42
+        },
+        "noteEnvironnementale": "B+"
+      },
+      "metriquesPerformance": {
+        "benchmarkMMLU": {
+          "valeur": 83.7,
+          "unite": "%",
+          "description": "Performance sur les tâches académiques"
+        },
+        "latenceReponse": {
+          "valeur": 450,
+          "unite": "ms",
+          "description": "Temps de réponse moyen"
+        },
+        "fenetreContextuelle": {
+          "valeur": 1000000,
+          "unite": "jetons",
+          "description": "Contexte maximal supporté"
+        },
+        "noteQualite": "B+",
+        "scorePrecision": 88.9
+      },
+      "facteursEconomiques": {
+        "prixAPI": {
+          "entree": 0.000125,
+          "sortie": 0.000375,
+          "unite": "$/1K jetons"
+        },
+        "coutParRequete": 0.008,
+        "noteValeur": "A",
+        "abonnementMensuel": {
+          "gratuit": true,
+          "premium": 20,
+          "entreprise": null
+        }
+      },
+      "capacitesTechniques": {
+        "supportMultimodal": ["texte", "image", "audio", "video", "code"],
+        "langagesProgrammation": ["Python", "JavaScript", "Java", "C++", "Go", "TypeScript"],
+        "fonctionnalitesSpeciales": [
+          "Intégration Google Workspace",
+          "Analyse de données massives",
+          "Contexte ultra-long",
+          "Recherche en temps réel",
+          "Collaboration Google"
+        ],
+        "integrations": ["Google Workspace", "Google Cloud", "Android", "Chrome"]
+      },
+      "accessibiliteDeploiement": {
+        "disponibilitePlateforme": ["Web", "Mobile Android", "API", "Google Apps"],
+        "regionsGeographiques": ["Mondial"],
+        "limitesTaux": {
+          "gratuit": "15 requêtes/min",
+          "premium": "300 requêtes/min",
+          "api": "Variable selon usage"
+        },
+        "supportLangues": 100
+      },
+      "conformiteDonnees": {
+        "conformiteRGPD": true,
+        "classificationAIActUE": "Haut risque",
+        "localisationDonnees": "Multi-régions",
+        "chiffrementDonnees": true,
+        "noteConfidentialite": "B",
+        "certifications": ["SOC 2", "ISO 27001", "CSA STAR"]
+      },
+      "experienceUtilisateur": {
+        "faciliteUtilisation": 8.8,
+        "preferencesDeveloppeurs": 7.9,
+        "frequenceMiseAJour": "Bi-mensuelle",
+        "qualiteDocumentation": 8.5,
+        "supportCommunaute": "Bon"
+      },
+      "avantagesInconvenients": {
+        "pointsForts": [
+          "Intégration Google Workspace native",
+          "Vitesse de réponse rapide",
+          "Support multimodal natif",
+          "Contexte ultra-long",
+          "Prix très compétitif"
+        ],
+        "limitations": [
+          "Performance inférieure aux leaders",
+          "Censure parfois excessive",
+          "Dépendance à l'écosystème Google",
+          "Moins de flexibilité",
+          "Documentation parfois incomplète"
+        ],
+        "idealePour": [
+          "Utilisateurs Google",
+          "Tâches rapides et simples",
+          "Analyse de gros volumes",
+          "Intégration workspace",
+          "Applications économiques"
+        ],
+        "aEviterQuand": [
+          "Tâches critiques complexes",
+          "Alternatives à Google requises",
+          "Besoins de personnalisation",
+          "Applications très spécialisées",
+          "Exigences de performance maximale"
+        ]
+      }
+    }
+  }
+}
+"perplexityPro": {
+      "nom": "Perplexity Pro",
+      "entreprise": "Perplexity AI",
+      "url": "https://perplexity.ai",
+      "pays": "🇺🇸",
+      "informationsModele": {
+        "dateSortie": "Janvier 2024",
+        "parametres": "~70B",
+        "architecture": "Transformer + RAG",
+        "typeModele": "Recherche augmentée",
+        "contexteMaximal": "16,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0006,
+          "unite": "kWh",
+          "description": "Par 1000 mots",
+          "noteVisuelle": "low",
+          "pourcentage": 15
+        },
+        "generationImage": {
+          "valeur": null,
+          "unite": "kWh",
+          "description": "Non disponible",
+          "noteVisuelle": "none",
+          "pourcentage": 0
+        },
+        "generationVideo": {
+          "valeur": null,
+          "unite": "kWh",
+          "description": "Non disponible",
+          "noteVisuelle": "none",
+          "pourcentage": 0
+        },
+        "energieEntrainement": {
+          "valeur": 800,
+          "unite": "MWh",
+          "noteVisuelle": "low",
+          "pourcentage": 20
+        },
+        "empreinteCarbone": {
+          "valeur": 0.95,
+          "unite": "g CO₂/requête",
+          "noteVisuelle": "low",
+          "pourcentage": 12
+        },
+        "noteEnvironnementale": "A-"
+      },
+      "metriquesPerformance": {
+        "benchmarkMMLU": {
+          "valeur": 78.9,
+          "unite": "%",
+          "description": "Performance sur les tâches académiques"
+        },
+        "latenceReponse": {
+          "valeur": 320,
+          "unite": "ms",
+          "description": "Temps de réponse moyen"
+        },
+        "fenetreContextuelle": {
+          "valeur": 16000,
+          "unite": "jetons",
+          "description": "Contexte maximal supporté"
+        },
+        "noteQualite": "B",
+        "scorePrecision": 85.5
+      },
+      "facteursEconomiques": {
+        "prixAPI": {
+          "entree": 0.002,
+          "sortie": 0.010,
+          "unite": "$/1K jetons"
+        },
+        "coutParRequete": 0.015,
+        "noteValeur": "A-",
+        "abonnementMensuel": {
+          "gratuit": true,
+          "premium": 20,
+          "entreprise": null
+        }
+      },
+      "capacitesTechniques": {
+        "supportMultimodal": ["texte", "recherche web"],
+        "langagesProgrammation": ["Python", "JavaScript", "SQL"],
+        "fonctionnalitesSpeciales": [
+          "Recherche en temps réel",
+          "Citations automatiques",
+          "Sources vérifiables",
+          "Fact-checking intégré",
+          "Résumés d'actualités"
+        ],
+        "integrations": ["API REST", "Extensions navigateur"]
+      },
+      "accessibiliteDeploiement": {
+        "disponibilitePlateforme": ["Web", "Mobile", "API", "Extensions"],
+        "regionsGeographiques": ["Mondial"],
+        "limitesTaux": {
+          "gratuit": "5 requêtes/4h",
+          "premium": "300 requêtes/jour",
+          "api": "1,000 requêtes/jour"
+        },
+        "supportLangues": 50
+      },
+      "conformiteDonnees": {
+        "conformiteRGPD": true,
+        "classificationAIActUE": "Risque minimal",
+        "localisationDonnees": "États-Unis",
+        "chiffrementDonnees": true,
+        "noteConfidentialite": "B+",
+        "certifications": ["SOC 2"]
+      },
+      "experienceUtilisateur": {
+        "faciliteUtilisation": 9.0,
+        "preferencesDeveloppeurs": 8.2,
+        "frequenceMiseAJour": "Hebdomadaire",
+        "qualiteDocumentation": 8.0,
+        "supportCommunaute": "Bon"
+      },
+      "avantagesInconvenients": {
+        "pointsForts": [
+          "Recherche en temps réel",
+          "Très faible consommation énergétique",
+          "Sources citées et vérifiables",
+          "Interface simple et intuitive",
+          "Mise à jour continue des données"
+        ],
+        "limitations": [
+          "Capacités créatives limitées",
+          "Dépendant des sources web",
+          "Contexte limité",
+          "Pas de génération multimédia",
+          "Performance inférieure sur tâches complexes"
+        ],
+        "idealePour": [
+          "Recherche et fact-checking",
+          "Veille informationnelle",
+          "Questions factuelles",
+          "Analyse d'actualités",
+          "Usage éco-responsable"
+        ],
+        "aEviterQuand": [
+          "Créativité requise",
+          "Analyse complexe",
+          "Génération de contenu",
+          "Tâches sans sources web",
+          "Applications hors ligne"
+        ]
+      }
+    },
+    "mistralLarge": {
+      "nom": "Mistral Large",
+      "entreprise": "Mistral AI",
+      "url": "https://mistral.ai",
+      "pays": "🇫🇷",
+      "informationsModele": {
+        "dateSortie": "Avril 2024",
+        "parametres": "~405B",
+        "architecture": "Transformer",
+        "typeModele": "Généraliste",
+        "contexteMaximal": "32,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0012,
+          "unite": "kWh",
+          "description": "Par 1000 mots",
+          "noteVisuelle": "medium",
+          "pourcentage": 40
+        },
+        "generationImage": {
+          "valeur": null,
+          "unite": "kWh",
+          "description": "Non disponible",
+          "noteVisuelle": "none",
+          "pourcentage": 0
+        },
+        "generationVideo": {
+          "valeur": null,
+          "unite": "kWh",
+          "description": "Non disponible",
+          "noteVisuelle": "none",
+          "pourcentage": 0
+        },
+        "energieEntrainement": {
+          "valeur": 1900,
+          "unite": "MWh",
+          "noteVisuelle": "medium",
+          "pourcentage": 50
+        },
+        "empreinteCarbone": {
+          "valeur": 1.82,
+          "unite": "g CO₂/requête",
+          "noteVisuelle": "medium",
+          "pourcentage": 35
+        },
+        "noteEnvironnementale": "B+"
+      },
+      "metriquesPerformance": {
+        "benchmarkMMLU": {
+          "valeur": 84.0,
+          "unite": "%",
+          "description": "Performance sur les tâches académiques"
+        },
+        "latenceReponse": {
+          "valeur": 780,
+          "unite": "ms",
+          "description": "Temps de réponse moyen"
+        },
+        "fenetreContextuelle": {
+          "valeur": 32000,
+          "unite": "jetons",
+          "description": "Contexte maximal supporté"
+        },
+        "noteQualite": "B+",
+        "scorePrecision": 89.8
+      },
+      "facteursEconomiques": {
+        "prixAPI": {
+          "entree": 0.002,
+          "sortie": 0.006,
+          "unite": "$/1K jetons"
+        },
+        "coutParRequete": 0.018,
+        "noteValeur": "A",
+        "abonnementMensuel": {
+          "gratuit": false,
+          "premium": 15,
+          "entreprise": 45
+        }
+      },
+      "capacitesTechniques": {
+        "supportMultimodal": ["texte", "code"],
+        "langagesProgrammation": ["Python", "JavaScript", "Java", "C++", "Go", "Rust"],
+        "fonctionnalitesSpeciales": [
+          "Conformité européenne native",
+          "Optimisation pour le français",
+          "Code de haute qualité",
+          "Raisonnement mathématique",
+          "Respect de la vie privée"
+        ],
+        "integrations": ["API REST", "Azure", "Hugging Face"]
+      },
+      "accessibiliteDeploiement": {
+        "disponibilitePlateforme": ["Web", "API", "Azure"],
+        "regionsGeographiques": ["Europe", "Amérique du Nord"],
+        "limitesTaux": {
+          "gratuit": "Non disponible",
+          "premium": "100 requêtes/min",
+          "api": "5,000 requêtes/min"
+        },
+        "supportLangues": 40
+      },
+      "conformiteDonnees": {
+        "conformiteRGPD": true,
+        "classificationAIActUE": "Conforme",
+        "localisationDonnees": "Europe",
+        "chiffrementDonnees": true,
+        "noteConfidentialite": "A",
+        "certifications": ["ISO 27001", "HDS"]
+      },
+      "experienceUtilisateur": {
+        "faciliteUtilisation": 8.5,
+        "preferencesDeveloppeurs": 8.7,
+        "frequenceMiseAJour": "Mensuelle",
+        "qualiteDocumentation": 8.8,
+        "supportCommunaute": "Bon"
+      },
+      "avantagesInconvenients": {
+        "pointsForts": [
+          "Solution européenne souveraine",
+          "Conformité RGPD native",
+          "Performance solide",
+          "Optimisation multilingue",
+          "Respect de la vie privée"
+        ],
+        "limitations": [
+          "Écosystème en développement",
+          "Capacités multimodales limitées",
+          "Adoption plus lente",
+          "Disponibilité géographique restreinte",
+          "Communauté plus petite"
+        ],
+        "idealePour": [
+          "Entreprises européennes",
+          "Conformité réglementaire",
+          "Applications sensibles",
+          "Développement multilingue",
+          "Souveraineté numérique"
+        ],
+        "aEviterQuand": [
+          "Intégrations tierces nombreuses",
+          "Besoins multimodaux étendus",
+          "Déploiement global immédiat",
+          "Budget très serré",
+          "Écosystème mature requis"
+        ]
+      }
+    },
+    "grok3": {
+      "nom": "Grok 3",
+      "entreprise": "xAI",
+      "url": "https://x.ai",
+      "pays": "🇺🇸",
+      "informationsModele": {
+        "dateSortie": "Février 2025",
+        "parametres": "~314B",
+        "architecture": "Transformer + RL",
+        "typeModele": "Conversationnel",
+        "contexteMaximal": "128,000 jetons"
+      },
+      "impactEnergetique": {
+        "energieRequeteTexte": {
+          "valeur": 0.0034,
+          "unite
