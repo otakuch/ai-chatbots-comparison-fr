@@ -1,394 +1,258 @@
 # 🤖⚡ Comparaison des chatbots IA 2025
 
-> **Analyse complète de la consommation énergétique et des performances des modèles d'IA leaders**
+> Analyse complète de l'écosystème IA : performance, énergie, gouvernance & conformité
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/naully/ai-chatbot-comparison-2025-fr)
-[![Licence](https://img.shields.io/badge/licence-MIT-green.svg)](./LICENSE)
-[![Stars](https://img.shields.io/github/stars/naully/ai-chatbot-comparison-2025-fr?style=social)](https://github.com/naully/ai-chatbot-comparison-2025-fr)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)](https://github.com/naully/ai-chatbot-comparison-2025-fr)
+[![Data Update](https://img.shields.io/badge/Data-Juillet%202025-green.svg)](./docs/CHANGELOG-FR.md)
+[![FLI Governance](https://img.shields.io/badge/Gouvernance-FLI%20Index-purple.svg)](https://futureoflife.org/ai-safety-index-2025)
 
----
+## 📋 Vue d'ensemble
 
-## 📋 Aperçu
+Cette analyse comparative **indépendante et open source** évalue les 11 chatbots IA les plus avancés au monde selon une méthodologie rigoureuse combinant performance technique, efficacité énergétique, facteurs économiques et **gouvernance responsable**.
 
-Cette analyse compare les **9 chatbots IA les plus avancés** au monde avec un focus unique sur l'**efficacité énergétique**, les métriques de performance et les standards de conformité européens. Alors que l'IA s'intègre de plus en plus dans nos flux de travail quotidiens, comprendre l'impact environnemental et l'efficacité de ces modèles devient crucial pour prendre des décisions éclairées.
+### 🎯 Objectifs de l'étude
 
-### 🎯 Pourquoi cette analyse ?
-
-- **Impact environnemental** : Première étude comparative sur la consommation énergétique
-- **Conformité RGPD** : Évaluation des standards européens de protection des données
-- **Analyse économique** : Comparaison coût/performance détaillée
-- **Objectivité** : Méthodologie transparente et reproductible
-
----
-
-## ✨ Fonctionnalités principales
-
-### 🔋 Analyse énergétique innovante
-- **Consommation par requête** : Mesure en kWh pour 1000 mots
-- **Empreinte carbone** : Calcul des émissions CO₂ par interaction
-- **Efficacité comparative** : Jauges visuelles pour comparaison rapide
-- **Impact d'entraînement** : Coût énergétique du développement
-
-### 📊 Métriques de performance
-- **Benchmarks académiques** : MMLU, HellaSwag, ARC
-- **Vitesse de réponse** : Latence mesurée en conditions réelles
-- **Qualité des réponses** : Évaluation par panel d'experts
-- **Précision factuelle** : Vérification croisée des informations
-
-### 💰 Analyse économique
-- **Prix API** : Coûts détaillés par modèle
-- **Rapport qualité/prix** : Notation comparative
-- **Coût par requête** : Calcul standardisé
-- **Modèles d'abonnement** : Comparaison des offres
-
-### 🛡️ Conformité et sécurité
-- **RGPD** : Évaluation de la conformité européenne
-- **AI Act UE** : Classification selon la réglementation
-- **Localisation des données** : Géographie des serveurs
-- **Certifications** : Standards de sécurité (SOC 2, ISO 27001)
-
-### 🎨 Interface interactive
-- **Design responsive** : Optimisé pour tous les appareils
-- **Jauges animées** : Visualisation intuitive de la consommation
-- **Filtres dynamiques** : Tri par catégories
-- **Mode sombre/clair** : Confort de lecture
+- **Performance technique** : MMLU Pro, LiveCodeBench, Intelligence Index
+- **Impact environnemental** : consommation énergétique et empreinte carbone
+- **Gouvernance IA** : évaluation FLI AI Safety Index 2025
+- **Analyse économique** : coûts API et rapport qualité-prix
+- **Conformité réglementaire** : RGPD, AI Act européen
+- **Expérience utilisateur** : accessibilité et facilité d'usage
 
 ---
 
 ## 🏆 Modèles analysés
 
-| Modèle | Entreprise | Pays | Spécialités | Note énergétique |
-|--------|------------|------|-------------|------------------|
-| **ChatGPT-4o** | OpenAI | 🇺🇸 | Multimodal, Écosystème | C+ |
-| **Claude Sonnet 4** | Anthropic | 🇺🇸 | Éthique, Efficacité | A |
-| **Gemini Pro** | Google | 🇺🇸 | Intégration, Vitesse | B+ |
-| **Perplexity Pro** | Perplexity AI | 🇺🇸 | Recherche, Sources | A- |
-| **Mistral Large** | Mistral AI | 🇫🇷 | RGPD, Europe | B+ |
-| **Grok 3** | xAI | 🇺🇸 | Temps réel, X/Twitter | D |
-| **DeepSeek R1** | DeepSeek | 🇨🇳 | Mathématiques, Efficacité | A+ |
-| **Qwen 2.5-Max** | Alibaba | 🇨🇳 | Multilingue, E-commerce | A |
-| **Step-2** | StepFun | 🇨🇳 | Vidéo, 3D, Multimodal | B+ |
+| Modèle | Entreprise | Spécialité | Note gouvernance | Leader en |
+|--------|------------|------------|------------------|-----------|
+| **ChatGPT-4o** | OpenAI 🇺🇸 | Multimodal, écosystème | C- (1.7) | Performance générale |
+| **Claude Sonnet 4** | Anthropic 🇺🇸 | Éthique, raisonnement | **A- (3.7)** | **🏆 Gouvernance** |
+| **Gemini 2.5 Pro** | Google 🇺🇸 | Intégration Google | D (1.0) | **💰 Prix (0.125$/1M)** |
+| **Microsoft Copilot** | Microsoft 🇺🇸 | Productivité Office | B+ (3.2) | Enterprise M365 |
+| **Perplexity Pro** | Perplexity 🇺🇸 | Recherche temps réel | N/A | Fact-checking |
+| **Mistral Large 2** | Mistral 🇫🇷 | Conformité RGPD | N/A | Solution européenne |
+| **Grok 4** | xAI 🇺🇸 | Twitter/X intégré | C- (1.85) | Tendances sociales |
+| **DeepSeek R1** | DeepSeek 🇨🇳 | Mathématiques | D+ (1.35) | **💻 Programmation (67.9%)** |
+| **Qwen 2.5 Max** | Alibaba 🇨🇳 | Multilingue | D+ (1.35) | Marché asiatique |
+| **Kimi K2** | Moonshot AI 🇨🇳 | Agents autonomes | N/A | **🤖 Intelligence agentique** |
 
 ---
 
-## 📈 Catégories d'analyse
+## 📊 Résultats clés
 
-### 1. 📋 Informations sur les modèles
-- **Date de sortie** et historique des versions
-- **Nombre de paramètres** et architecture technique
-- **Type de modèle** et spécialisations
-- **Contexte maximal** supporté
+### 🏛️ Gouvernance et sécurité IA
+Basé sur le [FLI AI Safety Index Summer 2025](https://futureoflife.org/ai-safety-index-2025)
 
-### 2. ⚡ Impact énergétique et environnemental
-- **Énergie par requête texte** (kWh/1000 mots)
-- **Génération d'images** (kWh/image)
-- **Génération vidéo** (kWh/30 secondes)
-- **Énergie d'entraînement** (MWh total)
-- **Empreinte carbone** (g CO₂/requête)
+- **🥇 Anthropic (A-)** : structure Public Benefit Corporation + Long-Term Benefit Trust
+- **🥈 Microsoft (B+)** : conformité enterprise et gouvernance publique solide  
+- **🥉 xAI (C-)** : Public Benefit Corporation Nevada, CEO pro-régulation
+- **⚠️ Google (D)** : lobbying anti-régulation, incidents employés sécurité
+- **⚠️ OpenAI (C-)** : transition gouvernance controversée, politique whistleblowing
 
-### 3. 📊 Métriques de performance
-- **Benchmark MMLU** (pourcentage de réussite)
-- **Latence de réponse** (millisecondes)
-- **Fenêtre contextuelle** (nombre de jetons)
-- **Score de précision** global
+### 📈 Performance technique
+Sources : [Artificial Analysis](https://artificialanalysis.ai) + tests indépendants
 
-### 4. 💰 Facteurs économiques
-- **Prix API** ($/1K jetons)
-- **Coût par requête** standardisé
-- **Note de valeur** comparative
-- **Options d'abonnement**
+- **MMLU Pro leader** : DeepSeek R1 (87.9%) > Claude Sonnet 4 (86.8%) > Qwen 2.5 Max (85.6%)
+- **Programmation champion** : DeepSeek R1 (67.9% LiveCodeBench) > Kimi K2 (53.7%) > ChatGPT-4o (44.7%)
+- **Intelligence composite** : Claude 4 Sonnet (69.8) > ChatGPT o1 (61.9) > Microsoft Copilot (58.3)
 
-### 5. 🛠️ Capacités techniques
-- **Support multimodal** (texte, image, audio, vidéo)
-- **Langages de programmation** supportés
-- **Fonctionnalités spéciales** uniques
-- **Intégrations** disponibles
+### ⚡ Efficacité énergétique
+- **🌱 Champions verts** : DeepSeek R1 (0.0005 kWh) > Perplexity (0.0006) > Qwen 2.5 (0.0007)
+- **⚠️ Énergivores** : Grok 4 (0.0034 kWh) > ChatGPT-4o (0.0029) > Microsoft Copilot (0.0025)
+- **Note A+** : DeepSeek R1, Qwen 2.5 Max (efficacité remarquable)
 
-### 6. 🌍 Accessibilité et déploiement
-- **Plateformes** disponibles
-- **Régions géographiques** couvertes
-- **Limites de taux** d'utilisation
-- **Support multilingue**
-
-### 7. 🔒 Conformité des données et sécurité
-- **Conformité RGPD** (Oui/Non/Partielle)
-- **Classification AI Act UE**
-- **Localisation des données**
-- **Certifications de sécurité**
-
-### 8. 👥 Expérience utilisateur
-- **Facilité d'utilisation** (score 1-10)
-- **Préférences développeurs**
-- **Fréquence des mises à jour**
-- **Qualité de la documentation**
-
-### 9. ⚖️ Avantages et inconvénients
-- **Points forts** identifiés
-- **Limitations** reconnues
-- **Idéal pour** (cas d'usage)
-- **À éviter quand** (contre-indications)
+### 💰 Rapport qualité-prix
+- **Prix imbattable** : Gemini 2.5 Pro (0.125$/1M tokens) - Note A+
+- **Excellent rapport** : DeepSeek R1 (0.14$/1M), Qwen 2.5 Max (1$/1M), Kimi K2 (0.15$/1M)
+- **Premium justifié** : Claude Sonnet 4 (3$/1M) pour la gouvernance et l'éthique
+- **Abonnement unique** : Microsoft Copilot (30$/mois) inclus dans M365
 
 ---
 
-## 🚀 Démarrage rapide
+### 🔍 Recherche par usage
 
-### Visualisation en ligne
-Accédez directement à l'analyse interactive :
-👉 **[Voir la comparaison](https://naully.github.io/ai-chatbot-comparison-2025-fr/)**
+**🏢 Entreprises soucieuses de gouvernance**
+- **Recommandé** : Claude Sonnet 4 (A- gouvernance, excellent rapport performance/énergie)
+- **Alternative** : Microsoft Copilot (B+ gouvernance, intégration M365 native)
 
-### Installation locale
+**💻 Développement et programmation**
+- **Champion** : DeepSeek R1 (67.9% LiveCodeBench, efficacité énergétique A+)
+- **Alternative** : Kimi K2 (53.7% programmation, capacités agentiques)
+
+**💰 Projets budget-conscients**
+- **Imbattable** : Gemini 2.5 Pro (0.125$/1M tokens, performance correcte)
+- **Open source** : DeepSeek R1 (0.14$/1M tokens, performance excellente)
+
+**🇪🇺 Conformité européenne**
+- **RGPD natif** : Mistral Large 2 (entreprise française, conformité UE)
+- **Alternative** : Claude Sonnet 4 (excellente gouvernance, données protégées)
+
+**🔬 Recherche et fact-checking**
+- **Spécialisé** : Perplexity Pro (recherche temps réel, sources citées)
+- **Efficace** : Claude Sonnet 4 (excellent raisonnement, faible consommation)
+
+---
+
+## 🔬 Méthodologie
+
+### 📊 Sources de données
+
+1. **[FLI AI Safety Index 2025](https://futureoflife.org/ai-safety-index-2025)** → Gouvernance et sécurité IA
+2. **[Artificial Analysis](https://artificialanalysis.ai)** → Performance et métriques techniques
+3. **Documentation officielle** → Spécifications et prix API
+4. **Tests empiriques** → Validation et vérification croisée
+
+### 🎯 Critères d'évaluation
+
+- **Performance** (30%) : MMLU Pro, LiveCodeBench, Intelligence Index
+- **Gouvernance** (25%) : Structure, sécurité, transparence, lobbying  
+- **Efficacité** (20%) : Consommation énergétique, empreinte carbone
+- **Économique** (15%) : Prix API, rapport qualité-prix
+- **Utilisabilité** (10%) : Accessibilité, facilité d'usage
+
+### ✅ Standards de qualité
+
+- **Objectivité** : aucun conflit d'intérêts financiers
+- **Transparence** : méthodologie et sources publiques
+- **Reproductibilité** : données et scripts open source
+- **Mise à jour** : révision mensuelle des métriques critiques
+
+📖 [Méthodologie complète](./docs/METHODOLOGY-FR.md) | 📚 [Sources détaillées](./docs/REFERENCES-FR.md)
+
+---
+
+## 🆕 Nouveautés version 2.0
+
+### 📊 Nouvelles métriques
+- **MMLU Pro** : version professionnelle plus exigeante (12,000 questions)
+- **LiveCodeBench** : programmation temps réel (400+ problèmes actualisés)
+- **Intelligence Index** : score composite Artificial Analysis
+- **Gouvernance FLI** : évaluation indépendante par 6 experts
+
+### 🏢 Nouveaux modèles
+- **Microsoft Copilot** : productivité enterprise, abonnement 30$/mois
+- **Kimi K2** : capacités agentiques open source, leader programmation alternative
+- **Mise à jour complète** : nouvelles versions de tous les modèles existants
+
+### 🔬 Améliorations techniques
+- **Synchronisation mensuelle** avec Artificial Analysis
+- **Intégration données FLI** en temps réel  
+- **Métriques énergétiques** affinées
+- **Dashboard responsive** optimisé mobile
+
+---
+
+## 📈 Évolution et roadmap
+
+### 🎯 Prochaines versions (Q4 2025)
+
+- **Nouveaux modèles** : GPT-5, Claude 5, Gemini 3.0
+- **Métriques étendues** : tests multilingues, éthique IA avancée
+- **API temps réel** : mise à jour automatique des données
+- **Analyses sectorielles** : santé, finance, éducation, recherche
+
+### 💬 Contributions bienvenues
 
 ```bash
-# Cloner le repository
-git clone https://github.com/naully/ai-chatbot-comparison-2025-fr.git
-
-# Naviguer dans le dossier
+# Cloner le projet
+git clone https://github.com/naully/ai-chatbot-comparison-2025-fr
 cd ai-chatbot-comparison-2025-fr
 
-# Ouvrir avec un serveur local (optionnel)
-python -m http.server 8000
-# ou
-npx serve .
+# Créer une branche
+git checkout -b feature/nouvelle-metrique
 
-# Ouvrir dans le navigateur
-open http://localhost:8000
+# Faire les modifications
+# ...
+
+# Soumettre une pull request
+git push origin feature/nouvelle-metrique
 ```
 
-### Utilisation
-
-1. **Ouvrir `index.html`** dans votre navigateur
-2. **Explorer les catégories** via le tableau interactif
-3. **Filtrer par critères** selon vos besoins
-4. **Analyser les jauges** énergétiques pour comparaison
-5. **Consulter la documentation** pour méthodologie détaillée
-
----
-
-## 🏗️ Structure du projet
-
-```
-ai-chatbot-comparison-2025-fr/
-├── 📄 index.html                 # Page principale avec tableau interactif
-├── 🎨 style.css                  # Styles CSS responsifs
-├── ⚙️ script.js                  # JavaScript pour interactivité
-├── 📖 README.md                  # Cette documentation
-├── 📜 LICENSE                    # Licence MIT
-├── 📁 docs/                      # Documentation détaillée
-│   ├── 📚 REFERENCES-FR.md       # Sources et bibliographie
-│   ├── 🔬 METHODOLOGY-FR.md      # Méthodologie de recherche
-│   └── 📝 CHANGELOG-FR.md        # Journal des modifications
-├── 📁 data/                      # Données structurées (optionnel)
-│   ├── 🤖 models-fr.json         # Données des modèles
-│   └── 📊 benchmarks-fr.json     # Résultats des benchmarks
-├── 📁 assets/                    # Ressources statiques
-│   ├── 🖼️ images/               # Screenshots et diagrammes
-│   └── 📋 icons/                 # Icônes et favicons
-└── 📁 .github/                   # Configuration GitHub
-    └── workflows/
-        └── 🚀 deploy.yml         # Déploiement automatique
-```
+**Types de contributions acceptées :**
+- 🐛 Corrections d'erreurs dans les données
+- 📊 Nouvelles métriques d'évaluation
+- 🔧 Améliorations méthodologiques
+- 🌍 Traductions dans d'autres langues
+- 📝 Améliorations de documentation
 
 ---
 
-## 📊 Sources de données et méthodologie
+## ⚠️ Limitations et disclaimers
 
-### Sources primaires
-- **Documentation officielle** des entreprises
-- **Papers techniques** peer-reviewed
-- **Tests empiriques** en conditions contrôlées
-- **Benchmarks standardisés** (MMLU, HellaSwag, ARC)
+### 🎯 Limitations reconnues
 
-### Méthodologie énergétique
-```
-Énergie par requête = (Puissance GPU × Temps traitement × PUE) / 1000
-Empreinte carbone = Consommation kWh × Facteur émission régional
+- **Données énergétiques** : estimations ±15% selon conditions d'usage
+- **Performance variable** : résultats peuvent varier selon charge serveur
+- **Évolution rapide** : marché IA en constante évolution
+- **Perspective géographique** : évaluation principalement occidentale
+- **Accès limité** : certaines infrastructures propriétaires non accessibles
 
-Facteurs d'émission utilisés :
-- États-Unis : 0.386 kg CO₂/kWh
-- Europe : 0.198 kg CO₂/kWh
-- Chine : 0.555 kg CO₂/kWh
+### 📊 Biais potentiels
+
+- **Linguistique** : focus français/anglais principalement
+- **Temporel** : snapshot juillet 2025
+- **Culturel** : gouvernance évaluée selon standards occidentaux
+- **Disponibilité** : modèles publiquement accessibles uniquement
+
+### 🛡️ Mesures d'atténuation
+
+- Diversification des sources de données
+- Panel international d'experts (FLI)  
+- Validation statistique robuste
+- Transparence méthodologique complète
+- Documentation des incertitudes
+
+---
+
+## 📄 Licence et citation
+
+### 📜 Licence
+Ce projet est sous licence MIT. Voir [LICENSE](./LICENSE) pour plus de détails.
+
+### 📖 Citation académique
+```bibtex
+@misc{naully2025_ai_chatbot_comparison,
+  title={Comparaison des Chatbots IA 2025: Performance, Énergie et Gouvernance},
+  author={Nicolas Naully},
+  year={2025},
+  month={juillet},
+  url={https://github.com/naully/ai-chatbot-comparison-2025-fr},
+  note={Version 2.0 - Données FLI AI Safety Index et Artificial Analysis}
+}
 ```
 
-### Validation des données
-- **Triangulation** : Minimum 3 sources par métrique
-- **Tests reproductibles** : Protocoles documentés
-- **Peer review** : Validation par experts
-- **Mise à jour** : Révision mensuelle
-
-📋 **Détails complets** : [METHODOLOGY-FR.md](./docs/METHODOLOGY-FR.md)
+### 🙏 Attribution requise
+Lors de l'utilisation de ces données, merci de citer :
+- **Auteur** : Nicolas Naully
+- **Sources** : FLI AI Safety Index 2025, Artificial Analysis
+- **URL** : https://github.com/naully/ai-chatbot-comparison-2025-fr
 
 ---
 
-## 🛠️ Stack technologique
+## 🌟 Supporters et sponsors
 
-### Frontend
-- **HTML5** : Structure sémantique moderne
-- **CSS3** : Animations et responsive design
-- **JavaScript ES6+** : Interactivité et manipulation DOM
-- **Chart.js** : Visualisations de données (optionnel)
+### 🏢 Partenaires institutionnels
+- **Future of Life Institute** - Données de gouvernance
+- **Artificial Analysis** - Métriques de performance
+- **Green Software Foundation** - Standards énergétiques
 
-### Déploiement
-- **GitHub Pages** : Hébergement statique gratuit
-- **GitHub Actions** : Déploiement automatique
-- **CDN** : Optimisation des performances globales
+### 💝 Contributeurs open source
+Un grand merci à tous les contributeurs qui rendent ce projet possible !
 
-### Outils de développement
-- **VS Code** : Environnement de développement
-- **Prettier** : Formatage automatique du code
-- **ESLint** : Validation syntaxique JavaScript
-- **Lighthouse** : Audit de performance et accessibilité
+[![Contributors](https://contrib.rocks/image?repo=naully/ai-chatbot-comparison-2025-fr)](https://github.com/naully/ai-chatbot-comparison-2025-fr/graphs/contributors)
 
----
-
-## 📈 Statistiques du projet
-
-### Données analysées
-- **9 modèles IA** leaders du marché
-- **54 métriques** différentes par modèle
-- **100+ sources** bibliographiques
-- **500+ heures** de recherche et tests
-
-### Impact mesuré
-- **Consommation énergétique** : 0.0005 à 0.0034 kWh/1000 mots
-- **Empreinte carbone** : 0.78 à 5.12 g CO₂/requête
-- **Coût par requête** : 0.005 à 0.028 dollars américains
-- **Performance MMLU** : 78.9% à 90.8%
-
-### Audience
-- **Développeurs** et architectes techniques
-- **Décideurs** IT et responsables produit
-- **Chercheurs** en IA et environnement
-- **Entreprises** évaluant des solutions IA
+### ☕ Soutenir le projet
+Si ce projet vous aide, considérez le soutenir :
+- ⭐ **Star** le repository GitHub
+- 🔄 **Partager** avec votre réseau  
+- 💬 **Contribuer** avec vos améliorations
+- ☕ [Buy me a coffee](https://buymeacoffee.com/naully)
 
 ---
 
-## 🤝 Guide de contribution
+*Dernière mise à jour : Juillet 2025 • Version 2.0*  
+*Made with ❤️ by [Nicolas Naully](https://github.com/naully) for the AI community*
 
-### Signaler un problème
-1. **Vérifier** les issues existantes
-2. **Créer** une nouvelle issue avec template
-3. **Décrire** le problème avec détails
-4. **Ajouter** captures d'écran si pertinent
-
-### Proposer des améliorations
-1. **Fork** le repository
-2. **Créer** une branche feature (`git checkout -b feature/amelioration`)
-3. **Committer** les modifications (`git commit -m 'Ajout: nouvelle fonctionnalité'`)
-4. **Push** vers la branche (`git push origin feature/amelioration`)
-5. **Ouvrir** une Pull Request avec description détaillée
-
-### Types de contributions recherchées
-- 🐛 **Corrections de bugs** et erreurs factuelles
-- 📊 **Nouvelles données** et métriques
-- 🎨 **Améliorations UI/UX**
-- 📚 **Documentation** et traductions
-- 🧪 **Tests** et validation des données
-- 🌍 **Nouveaux modèles** à analyser
-
-### Standards de qualité
-- **Code formaté** avec Prettier
-- **Commits** descriptifs en français
-- **Tests** pour nouvelles fonctionnalités
-- **Documentation** mise à jour
-- **Respect** de la méthodologie existante
-
----
-
-## 🔮 Feuille de route
-
-### Version 1.1 (Q3 2025)
-- [ ] **Nouveaux modèles** : GPT-5, Claude Opus 4
-- [ ] **Métriques avancées** : Bias detection, Hallucination rate
-- [ ] **API REST** pour accès programmatique
-- [ ] **Export données** (JSON, CSV, PDF)
-
-### Version 1.2 (Q4 2025)
-- [ ] **Interface graphique** améliorée
-- [ ] **Comparaison personnalisée** par critères
-- [ ] **Alertes** sur nouveaux modèles
-- [ ] **Mode offline** avec PWA
-
-### Version 2.0 (2026)
-- [ ] **Plateforme collaborative** communautaire
-- [ ] **Tests automatisés** en continu
-- [ ] **Intelligence prédictive** des tendances
-- [ ] **Certification** indépendante des résultats
-
----
-
-## 📄 Licence et utilisation
-
-### Licence MIT
-Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour les détails complets.
-
-### Utilisation commerciale
-✅ **Autorisée** avec attribution  
-✅ **Modification** et redistribution  
-✅ **Usage privé** et commercial  
-❌ **Garantie** ou responsabilité
-
-### Attribution recommandée
-```
-Données issues de "Comparaison des chatbots IA 2025" par Naully Nicolas
-Source : https://github.com/naully/ai-chatbot-comparison-2025-fr
-```
-
----
-
-## 👨‍💻 À propos de l'auteur
-
-### Naully Nicolas
-**Spécialiste IA et développement durable numérique**
-
-- 🎓 **Formation** : Ingénieur informatique, spécialisation IA
-- 🏢 **Expérience** : 8 ans en développement et architecture IA
-- 🌱 **Passion** : IA responsable et impact environnemental
-- 📍 **Localisation** : Villeneuve-d'Ascq, France
-
-### Contact et réseaux
-- 📧 **Email** : [nicolas.naully@example.com](mailto:nicolas.naully@example.com)
-- 💼 **LinkedIn** : [linkedin.com/in/naully-nicolas](https://linkedin.com/in/naully-nicolas)
-- 🐙 **GitHub** : [github.com/naully](https://github.com/naully)
-- 🐦 **Twitter** : [@naully_dev](https://twitter.com/naully_dev)
-
----
-
-## 🙏 Remerciements
-
-### Contributeurs principaux
-- **Équipes techniques** des entreprises d'IA pour la documentation
-- **Communauté open source** pour les outils et frameworks
-- **Experts en environnement** pour la validation méthodologique
-- **Beta testeurs** pour les retours et améliorations
-
-### Outils et services
-- **GitHub** pour l'hébergement et collaboration
-- **Anthropic Claude** pour l'assistance au développement
-- **Carbon Trust** pour les méthodologies carbone
-- **Papers With Code** pour les benchmarks académiques
-
-### Inspiration
-Cette analyse s'inspire des travaux pionniers sur l'IA verte et la mesure d'impact environnemental des modèles de machine learning.
-
----
-
-## 📞 Support et communauté
-
-### Besoin d'aide ?
-- 📖 **Documentation** : [docs/](./docs/)
-- 🐛 **Issues GitHub** : [Signaler un problème](https://github.com/naully/ai-chatbot-comparison-2025-fr/issues)
-- 💬 **Discussions** : [GitHub Discussions](https://github.com/naully/ai-chatbot-comparison-2025-fr/discussions)
-- 📧 **Contact direct** : [nicolas.naully@example.com](mailto:nicolas.naully@example.com)
-
-### Communauté
-Rejoignez la communauté des professionnels intéressés par l'IA responsable et l'efficacité énergétique des modèles d'intelligence artificielle.
-
----
-
-**⭐ Si ce projet vous aide, n'hésitez pas à lui donner une étoile sur GitHub !**
-
----
-
-*Dernière mise à jour : Juillet 2025*  
-*Version : 1.0.0*  
-*Licence : MIT*
+**🔗 Liens rapides :**
+[🏠 Dashboard](./index.html) | [📋 Méthodologie](./docs/METHODOLOGY-FR.md) | [📚 Références](./docs/REFERENCES-FR.md) | [📈 Changelog](./docs/CHANGELOG-FR.md)
