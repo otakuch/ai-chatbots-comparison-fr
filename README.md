@@ -237,11 +237,6 @@ Lors de l'utilisation de ces données, merci de citer :
 - **Artificial Analysis** - Métriques de performance
 - **Green Software Foundation** - Standards énergétiques
 
-### 💝 Contributeurs open source
-Un grand merci à tous les contributeurs qui rendent ce projet possible !
-
-[![Contributors](https://contrib.rocks/image?repo=naully/ai-chatbot-comparison-2025-fr)](https://github.com/naully/ai-chatbot-comparison-2025-fr/graphs/contributors)
-
 ### ☕ Soutenir le projet
 Si ce projet vous aide, considérez le soutenir :
 - ⭐ **Star** le repository GitHub
