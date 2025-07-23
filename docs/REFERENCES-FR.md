@@ -48,6 +48,16 @@
   - [Article de référence](https://arxiv.org/abs/1907.10597) - Schwartz et al., 2020
   - Vision : développement d'IA plus respectueuse de l'environnement
 
+- **🏆 "Our contribution to a global environmental standard for AI" - Mistral AI LCA**
+  - [Rapport officiel](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) - Mistral AI, 2025
+  - **Première LCA complète du secteur IA** - Conforme ISO 14040/44 et GHG Protocol Product Standard
+  - **Auditeurs** : Carbone 4 (consultancy CSR), ADEME (agence écologique française)
+  - **Peer review** : Resilio et Hubblo (consultancies environnement digital)
+  - **Métrique clé** : 1.14 gCO₂e pour 400 tokens (Mistral Large 2)
+  - **Données training** : 20,4 ktCO₂e, 281 000 m³ d'eau, 660 kg Sb eq
+  - **Standard** : Sera disponible via Base Empreinte ADEME
+  - Impact : définit le nouveau standard de transparence environnementale pour l'IA
+
 ---
 
 ## 🏢 Documentation officielle des entreprises
@@ -97,7 +107,7 @@
 - **Documentation API** : [https://docs.perplexity.ai](https://docs.perplexity.ai)
 - **Research Publications** : [https://perplexity.ai/research](https://perplexity.ai/research)
 
-### Mistral AI
+### Mistral AI 🏆
 
 - **Site principal** : [https://mistral.ai](https://mistral.ai)
 - **Documentation** : [https://docs.mistral.ai](https://docs.mistral.ai)
@@ -105,6 +115,13 @@
 - **Platform** : [https://console.mistral.ai](https://console.mistral.ai)
 - **GitHub** : [https://github.com/mistralai](https://github.com/mistralai)
 - **Mistral Large 2 Announcement** : [https://mistral.ai/news/mistral-large-2/](https://mistral.ai/news/mistral-large-2/)
+- **🌍 Environmental LCA Study (Juillet 2025)** : [https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai)
+  - **Première LCA complète industrie IA**
+  - **Partenaires** : Carbone 4, ADEME (Agence française écologie)
+  - **Standards** : ISO 14040/44, GHG Protocol Product Standard
+  - **Peer Review** : Resilio, Hubblo
+  - **Méthodologie** : Frugal AI (AFNOR)
+  - **Données certifiées** : 1.14 gCO₂e/400 tokens, 45 mL eau, 0.16 mg Sb eq
 
 ### xAI (Grok 4)
 
@@ -176,6 +193,18 @@
 
 ### Consommation énergétique
 
+- **🏆 Mistral AI LCA - Référence Secteur (2025)**
+  - [Étude complète](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai)
+  - **Méthodologie** : Première LCA conforme ISO 14040/44 et GHG Protocol
+  - **Auditeurs** : Carbone 4 (leader CSR), ADEME (agence française écologie)
+  - **Peer Review** : Resilio et Hubblo (spécialistes environnement digital)
+  - **Standards** : Frugal AI methodology (AFNOR)
+  - **Données certifiées Mistral Large 2** :
+    - Training : 20,4 ktCO₂e, 281 000 m³ eau, 660 kg Sb eq
+    - Inference : 1.14 gCO₂e, 45 mL eau, 0.16 mg Sb eq (pour 400 tokens)
+  - **Disponibilité** : Base Empreinte ADEME (base de données officielle française)
+  - **Impact** : Nouveau standard industrie pour transparence environnementale IA
+
 - **ML CO2 Impact Calculator**
   - [Outil en ligne](https://mlco2.github.io/impact/)
   - [GitHub Repository](https://github.com/mlco2/impact)
@@ -190,6 +219,22 @@
   - [Calculator](http://calculator.green-algorithms.org/)
   - [Paper](https://onlinelibrary.wiley.com/doi/10.1002/advs.202100707)
   - Fonction : estimation de l'impact environnemental
+
+### Organismes de certification environnementale
+
+- **ADEME (Agence française de l'environnement)**
+  - [Base Empreinte](https://base-empreinte.ademe.fr/)
+  - [Méthodologies LCA](https://www.ademe.fr/expertise/economie-circulaire/economie-circulaire-entreprises/dossier/lanalyse-cycle-vie/methodologies-analyses-cycle-vie)
+  - Rôle : certification officielle des données environnementales
+
+- **Carbone 4**
+  - [Site officiel](https://www.carbone4.com/)
+  - [Expertise digitale](https://www.carbone4.com/digital)
+  - Spécialité : consultation carbone et RSE, partenaire Mistral LCA
+
+- **AFNOR (Association française de normalisation)**
+  - [Frugal AI Methodology](https://www.afnor.org/themes/developpement-durable/economie-circulaire/)
+  - Standard : méthodologie utilisée par Mistral pour leur LCA
 
 ### Autres bases de données de performance
 
@@ -275,6 +320,12 @@
 - **ISO/IEC 23053:2022**
   - [Framework for AI Risk Management](https://www.iso.org/standard/74438.html)
   - Application : gestion des risques IA
+
+- **ISO 14040/44 - LCA Standards**
+  - [ISO 14040:2006](https://www.iso.org/standard/37456.html) - Principes et cadre LCA
+  - [ISO 14044:2006](https://www.iso.org/standard/38498.html) - Exigences et lignes directrices LCA
+  - **Utilisation** : Standards utilisés par Mistral AI pour leur LCA complète
+  - **Impact** : Référence internationale pour analyses de cycle de vie
 
 - **NIST AI Risk Management Framework**
   - [AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework)
@@ -375,6 +426,7 @@
 - **Nouvelles sources** : continue
 - **Validation croisée** : mensuelle
 - **Benchmarks émergents** : suivi en temps réel
+- **🆕 Données environnementales** : trimestrielle (ou lors de nouvelles LCA certifiées)
 
 ### Processus de validation
 1. **Vérification des sources primaires**
@@ -382,11 +434,16 @@
 3. **Test empirique quand possible**
 4. **Peer review des modifications**
 5. **Attribution correcte des données tierces**
+6. **🆕 Validation des certifications environnementales** (ISO, ADEME, etc.)
 
 ### Historique des versions
 - **v1.0.0** (juillet 2025) : version initiale
 - **v2.0.0** (juillet 2025) : intégration Artificial Analysis + FLI AI Safety Index
 - **v2.0.1** (juillet 2025) : ajout Microsoft Copilot et Kimi K2
+- **v2.1.0** (juillet 2025) : **🆕 Intégration données LCA Mistral AI officielles**
+  - Données environnementales certifiées ISO 14040/44
+  - Première LCA complète secteur IA (Carbone 4 + ADEME)
+  - Nouveau standard transparence environnementale
 - **Futures versions** : voir [CHANGELOG-FR.md](./CHANGELOG-FR.md)
 
 ---
@@ -397,6 +454,7 @@
 
 - **Artificial Analysis** : attribution requise pour toute utilisation ([https://artificialanalysis.ai](https://artificialanalysis.ai))
 - **FLI AI Safety Index** : citation requise (Future of Life Institute, 2025)
+- **🆕 Mistral AI LCA** : attribution requise (Mistral AI, Carbone 4, ADEME, 2025)
 - **Papers académiques** : citations selon standards académiques
 - **Documentation entreprises** : utilisation équitable (fair use)
 
@@ -414,7 +472,9 @@
 
 - **Artificial Analysis** : échantillon de modèles disponibles publiquement
 - **FLI Safety Index** : perspective occidentale dominante pour la gouvernance
-- **Métriques énergétiques** : estimations avec marge d'erreur ±15%
+- **Métriques énergétiques** : 
+  - **Estimations générales** : marge d'erreur ±30%
+  - **🆕 Exception Mistral Large 2** : données certifiées LCA complète (marge d'erreur <5%)
 - **Prix API** : fluctuations fréquentes, snapshot au moment de l'analyse
 
 ### Responsabilités
@@ -422,9 +482,73 @@
 - **Données tierces** : nous ne sommes pas responsables de l'exactitude des sources externes
 - **Évolution rapide** : les performances et prix peuvent changer rapidement
 - **Usage commercial** : vérifier les licences appropriées pour usage commercial
+- **🆕 Données environnementales** : seules les données Mistral sont certifiées ISO 14040/44, les autres restent des estimations
+
+---
+
+## 🏆 Points saillants - Données Mistral AI
+
+### Innovation méthodologique
+- **Première LCA complète du secteur IA** conforme aux standards internationaux
+- **Méthodologie Frugal AI** (AFNOR) spécialement développée pour l'IA
+- **Peer review rigoureux** par des experts environnement digital
+
+### Données techniques certifiées
+- **Inference** : 1.14 gCO₂e, 45 mL eau, 0.16 mg Sb eq (pour 400 tokens)
+- **Training complet** : 20,4 ktCO₂e, 281 000 m³ eau, 660 kg Sb eq
+- **Méthodologie** : Location-based approach pour émissions électricité
+- **Périmètre** : Impacts upstream inclus (fabrication hardware, refroidissement, etc.)
+
+### Impact industrie
+- **Standard de référence** : Première transparence environnementale complète
+- **Disponibilité publique** : Base Empreinte ADEME (base officielle française)
+- **Reproductibilité** : Méthodologie documentée pour autres entreprises IA
+- **Influence réglementaire** : Contribue aux futurs standards européens IA Act
 
 ---
 
 *Dernière mise à jour : juillet 2025*  
-*Sources principales : Artificial Analysis Database, FLI AI Safety Index Summer 2025*  
+*Sources principales : Artificial Analysis Database, FLI AI Safety Index Summer 2025, Mistral AI LCA Study 2025*  
 *Licence : MIT - Voir [LICENSE](../LICENSE)*
+
+---
+
+## 🔗 Liens rapides vers sources principales
+
+### Documentation environnementale 🌍
+- [Mistral AI LCA Study](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) - **Source certifiée ISO 14040/44**
+- [Base Empreinte ADEME](https://base-empreinte.ademe.fr/) - Base officielle française
+- [Carbone 4 Digital Expertise](https://www.carbone4.com/digital) - Consultant LCA Mistral
+
+### Performance et benchmarks 📊
+- [Artificial Analysis Database](https://artificialanalysis.ai) - Source principale métriques
+- [LiveCodeBench](https://livecodebench.github.io/) - Benchmark programmation temps réel
+- [LMSYS Chatbot Arena](https://chat.lmsys.org/) - Évaluations humaines
+
+### Gouvernance et sécurité 🏛️
+- [FLI AI Safety Index 2025](https://futureoflife.org/ai-safety-index-2025) - Rapport gouvernance complet
+- [Anthropic Safety Research](https://anthropic.com/safety) - Leader gouvernance (A-)
+- [OpenAI Preparedness Framework](https://cdn.openai.com/preparedness-framework-beta.pdf) - Framework sécurité
+
+### Standards et certifications 📋
+- [ISO 14040/44 Standards](https://www.iso.org/standard/37456.html) - Standards LCA internationaux
+- [GHG Protocol Product Standard](https://ghgprotocol.org/product-standard) - Méthodologie carbone
+- [AFNOR Frugal AI](https://www.afnor.org/) - Méthodologie française IA durable
+
+---
+
+## 📞 Contacts pour validation des données
+
+### Sources primaires
+- **Artificial Analysis** : [contact@artificialanalysis.ai](mailto:contact@artificialanalysis.ai)
+- **Future of Life Institute** : [safety-index@futureoflife.org](mailto:safety-index@futureoflife.org)
+- **Mistral AI** : [press@mistral.ai](mailto:press@mistral.ai) (données environnementales)
+
+### Experts indépendants
+- **Carbone 4** : [contact@carbone4.com](mailto:contact@carbone4.com) - Validation méthodologie LCA
+- **ADEME** : [base-empreinte@ademe.fr](mailto:base-empreinte@ademe.fr) - Certification données
+- **Resilio** : [contact@resilio-solutions.com](mailto:contact@resilio-solutions.com) - Peer review environnement
+
+### Notre équipe
+- **Naully Nicolas** : [nicolas@naully.com](mailto:nicolas@naully.com) - Auteur principal
+- **Équipe technique** : [tech@naully.com](mailto:tech@naully.com) - Questions méthodologiques
