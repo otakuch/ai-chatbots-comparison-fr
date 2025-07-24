@@ -115,6 +115,7 @@
 - **Platform** : [https://console.mistral.ai](https://console.mistral.ai)
 - **GitHub** : [https://github.com/mistralai](https://github.com/mistralai)
 - **Mistral Large 2 Announcement** : [https://mistral.ai/news/mistral-large-2/](https://mistral.ai/news/mistral-large-2/)
+- **Mistral NeMo Official** : [https://mistral.ai/news/mistral-nemo](https://mistral.ai/news/mistral-nemo)
 - **🌍 Environmental LCA Study (Juillet 2025)** : [https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai)
   - **Première LCA complète industrie IA**
   - **Partenaires** : Carbone 4, ADEME (Agence française écologie)
@@ -122,6 +123,25 @@
   - **Peer Review** : Resilio, Hubblo
   - **Méthodologie** : Frugal AI (AFNOR)
   - **Données certifiées** : 1.14 gCO₂e/400 tokens, 45 mL eau, 0.16 mg Sb eq
+
+### 🔐 Proton (Lumo) - **Nouveau juillet 2025**
+
+- **Site officiel Lumo** : [https://lumo.proton.me](https://lumo.proton.me)
+- **About Lumo** : [https://lumo.proton.me/about](https://lumo.proton.me/about)
+- **Proton Foundation** : [https://proton.me](https://proton.me)
+- **Blog officiel - Annonce Lumo** : [https://proton.me/blog/lumo-ai](https://proton.me/blog/lumo-ai)
+- **Support Lumo** : [https://proton.me/support/lumo](https://proton.me/support/lumo)
+- **Applications mobiles** : iOS App Store, Google Play Store
+- **Politique de confidentialité** : [https://proton.me/legal/privacy](https://proton.me/legal/privacy)
+- **Écosystème Proton** : 100M+ utilisateurs (Mail, VPN, Drive, Pass)
+
+**🔬 Données techniques Lumo :**
+- **Architecture** : Mistral NeMo + NVIDIA OpenHands 32B + Zero-Access Encryption
+- **Performance MMLU** : ~39.9% (basé sur Mistral NeMo - Artificial Analysis)
+- **Vitesse** : 155.8 tokens/sec (Mistral NeMo baseline)
+- **Langues supportées** : Anglais, Français, Allemand, Espagnol, Italien
+- **Chiffrement** : Battle-tested zero-access encryption (Proton ecosystem)
+- **Gouvernance** : Proton Foundation (Nonprofit suisse) - Note estimée A+ (4.0)
 
 ### xAI (Grok 4)
 
@@ -164,6 +184,7 @@
 - **Site officiel** : [https://artificialanalysis.ai](https://artificialanalysis.ai)
 - **Database Access** : [https://artificialanalysis.ai/data](https://artificialanalysis.ai/data)
 - **Methodology** : [https://artificialanalysis.ai/methodology](https://artificialanalysis.ai/methodology)
+- **Mistral NeMo Analysis** : [https://artificialanalysis.ai/models/mistral-nemo](https://artificialanalysis.ai/models/mistral-nemo)
 - **Attribution Requirements** : https://artificialanalysis.ai (attribution requise)
 - **Brand Kit** : [https://artificialanalysis.ai/brand-kit](https://artificialanalysis.ai/brand-kit)
 - **Fichier source** : modelsdata_20250719.xlsx (223 modèles évalués)
@@ -256,7 +277,16 @@
 
 ---
 
-## 🔍 Sources d'information industrielle
+## 🔍 Sources d'information industrielle et actualités
+
+### 🆕 Actualités Proton Lumo (23-24 juillet 2025)
+
+- **TechCrunch** : [Proton's new privacy-first AI assistant encrypts all chats, keeps no logs](https://techcrench.com/2025/07/23/protons-new-privacy-first-ai-assistant-encrypts-all-chats-keeps-no-logs/)
+- **MacRumors** : [Proton's New AI Assistant Lumo Offers Encrypted Chat Alternative](https://www.macrumors.com/2025/07/23/proton-lumo-encrypted-ai-chatbot/)
+- **The Verge** : [Proton's privacy-focused Lumo chatbot encrypts all your conversations](https://www.theverge.com/ai/protons-privacy-focused-lumo-chatbot-encrypts-all-your-conversations)
+- **BleepingComputer** : [Proton launches privacy-respecting encrypted AI assistant Lumo](https://www.bleepingcomputer.com/news/artificial-intelligence/proton-launches-privacy-respecting-encrypted-ai-assistant-lumo/)
+- **TechRadar** : [ChatGPT, meet your privacy-focused rival: Proton Mail's creator launches a super-secure AI chatbot](https://www.techradar.com/computing/artificial-intelligence/look-out-chatgpt-the-creator-of-proton-mail-has-just-launched-a-new-ai-chatbot-thats-super-secure-and-private)
+- **9to5Mac** : [Proton throws shade at Apple Intelligence privacy as it launches AI chatbot](https://9to5mac.com/2025/07/23/proton-throws-shade-at-apple-intelligence-privacy-as-it-launches-ai-chatbot/)
 
 ### Analyses de marché
 
@@ -314,6 +344,7 @@
 - **RGPD**
   - [Règlement complet](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679)
   - [Guide CNIL](https://www.cnil.fr/fr/intelligence-artificielle)
+  - **🔐 Application Proton Lumo** : Conformité native RGPD (entreprise suisse, base Europe)
 
 ### Standards internationaux
 
@@ -376,6 +407,7 @@
 - **Azure OpenAI** : [https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/)
 - **AWS Bedrock** : [https://aws.amazon.com/bedrock/pricing/](https://aws.amazon.com/bedrock/pricing/)
 - **Mistral AI Pricing** : [https://mistral.ai/technology/#pricing](https://mistral.ai/technology/#pricing)
+- **🆕 Proton Lumo Pricing** : Gratuit (limité) / Lumo Plus $12.99/mois
 
 ### Analyses de coûts
 
@@ -405,150 +437,8 @@
   - [Paper](https://arxiv.org/abs/2212.08073) - Bai et al., 2022
   - Innovation : entraînement IA avec principes constitutionnels
 
-### Études récentes sur la gouvernance IA
+### 🆕 Papers sur la privacy et le chiffrement en IA
 
-- **"AI Governance and the Policymaker's Dilemma"**
-  - [Stanford HAI](https://hai.stanford.edu/policy)
-  - Focus : défis réglementaires de l'IA
-
-- **"The Ethics of AI Safety"**
-  - [Paper](https://arxiv.org/abs/2404.16793) - Russell et al., 2024
-  - Thème : considérations éthiques en sécurité IA
-
----
-
-## 🔄 Méthodologie de mise à jour
-
-### Fréquence de révision
-- **Données Artificial Analysis** : mensuelle (synchronisation automatique)
-- **FLI AI Safety Index** : bi-annuelle (été/hiver)
-- **Prix et disponibilité** : hebdomadaire (marché très dynamique)
-- **Nouvelles sources** : continue
-- **Validation croisée** : mensuelle
-- **Benchmarks émergents** : suivi en temps réel
-- **🆕 Données environnementales** : trimestrielle (ou lors de nouvelles LCA certifiées)
-
-### Processus de validation
-1. **Vérification des sources primaires**
-2. **Recoupement avec sources secondaires**
-3. **Test empirique quand possible**
-4. **Peer review des modifications**
-5. **Attribution correcte des données tierces**
-6. **🆕 Validation des certifications environnementales** (ISO, ADEME, etc.)
-
-### Historique des versions
-- **v1.0.0** (juillet 2025) : version initiale
-- **v2.0.0** (juillet 2025) : intégration Artificial Analysis + FLI AI Safety Index
-- **v2.0.1** (juillet 2025) : ajout Microsoft Copilot et Kimi K2
-- **v2.1.0** (juillet 2025) : **🆕 Intégration données LCA Mistral AI officielles**
-  - Données environnementales certifiées ISO 14040/44
-  - Première LCA complète secteur IA (Carbone 4 + ADEME)
-  - Nouveau standard transparence environnementale
-- **Futures versions** : voir [CHANGELOG-FR.md](./CHANGELOG-FR.md)
-
----
-
-## 📄 Licences et attributions
-
-### Données tierces
-
-- **Artificial Analysis** : attribution requise pour toute utilisation ([https://artificialanalysis.ai](https://artificialanalysis.ai))
-- **FLI AI Safety Index** : citation requise (Future of Life Institute, 2025)
-- **🆕 Mistral AI LCA** : attribution requise (Mistral AI, Carbone 4, ADEME, 2025)
-- **Papers académiques** : citations selon standards académiques
-- **Documentation entreprises** : utilisation équitable (fair use)
-
-### Notre travail
-
-- **Analyse et méthodologie** : CC BY 4.0
-- **Code et scripts** : MIT License
-- **Dashboard et visualisations** : CC BY 4.0
-
----
-
-## ⚠️ Avertissements et limitations
-
-### Limitations des données
-
-- **Artificial Analysis** : échantillon de modèles disponibles publiquement
-- **FLI Safety Index** : perspective occidentale dominante pour la gouvernance
-- **Métriques énergétiques** : 
-  - **Estimations générales** : marge d'erreur ±30%
-  - **🆕 Exception Mistral Large 2** : données certifiées LCA complète (marge d'erreur <5%)
-- **Prix API** : fluctuations fréquentes, snapshot au moment de l'analyse
-
-### Responsabilités
-
-- **Données tierces** : nous ne sommes pas responsables de l'exactitude des sources externes
-- **Évolution rapide** : les performances et prix peuvent changer rapidement
-- **Usage commercial** : vérifier les licences appropriées pour usage commercial
-- **🆕 Données environnementales** : seules les données Mistral sont certifiées ISO 14040/44, les autres restent des estimations
-
----
-
-## 🏆 Points saillants - Données Mistral AI
-
-### Innovation méthodologique
-- **Première LCA complète du secteur IA** conforme aux standards internationaux
-- **Méthodologie Frugal AI** (AFNOR) spécialement développée pour l'IA
-- **Peer review rigoureux** par des experts environnement digital
-
-### Données techniques certifiées
-- **Inference** : 1.14 gCO₂e, 45 mL eau, 0.16 mg Sb eq (pour 400 tokens)
-- **Training complet** : 20,4 ktCO₂e, 281 000 m³ eau, 660 kg Sb eq
-- **Méthodologie** : Location-based approach pour émissions électricité
-- **Périmètre** : Impacts upstream inclus (fabrication hardware, refroidissement, etc.)
-
-### Impact industrie
-- **Standard de référence** : Première transparence environnementale complète
-- **Disponibilité publique** : Base Empreinte ADEME (base officielle française)
-- **Reproductibilité** : Méthodologie documentée pour autres entreprises IA
-- **Influence réglementaire** : Contribue aux futurs standards européens IA Act
-
----
-
-*Dernière mise à jour : juillet 2025*  
-*Sources principales : Artificial Analysis Database, FLI AI Safety Index Summer 2025, Mistral AI LCA Study 2025*  
-*Licence : MIT - Voir [LICENSE](../LICENSE)*
-
----
-
-## 🔗 Liens rapides vers sources principales
-
-### Documentation environnementale 🌍
-- [Mistral AI LCA Study](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai) - **Source certifiée ISO 14040/44**
-- [Base Empreinte ADEME](https://base-empreinte.ademe.fr/) - Base officielle française
-- [Carbone 4 Digital Expertise](https://www.carbone4.com/digital) - Consultant LCA Mistral
-
-### Performance et benchmarks 📊
-- [Artificial Analysis Database](https://artificialanalysis.ai) - Source principale métriques
-- [LiveCodeBench](https://livecodebench.github.io/) - Benchmark programmation temps réel
-- [LMSYS Chatbot Arena](https://chat.lmsys.org/) - Évaluations humaines
-
-### Gouvernance et sécurité 🏛️
-- [FLI AI Safety Index 2025](https://futureoflife.org/ai-safety-index-2025) - Rapport gouvernance complet
-- [Anthropic Safety Research](https://anthropic.com/safety) - Leader gouvernance (A-)
-- [OpenAI Preparedness Framework](https://cdn.openai.com/preparedness-framework-beta.pdf) - Framework sécurité
-
-### Standards et certifications 📋
-- [ISO 14040/44 Standards](https://www.iso.org/standard/37456.html) - Standards LCA internationaux
-- [GHG Protocol Product Standard](https://ghgprotocol.org/product-standard) - Méthodologie carbone
-- [AFNOR Frugal AI](https://www.afnor.org/) - Méthodologie française IA durable
-
----
-
-## 📞 Contacts pour validation des données
-
-### Sources primaires
-- **Artificial Analysis** : [contact@artificialanalysis.ai](mailto:contact@artificialanalysis.ai)
-- **Future of Life Institute** : [safety-index@futureoflife.org](mailto:safety-index@futureoflife.org)
-- **Mistral AI** : [press@mistral.ai](mailto:press@mistral.ai) (données environnementales)
-
-### Experts indépendants
-- **Carbone 4** : [contact@carbone4.com](mailto:contact@carbone4.com) - Validation méthodologie LCA
-- **ADEME** : [base-empreinte@ademe.fr](mailto:base-empreinte@ademe.fr) - Certification données
-- **Resilio** : [contact@resilio-solutions.com](mailto:contact@resilio-solutions.com) - Peer review environnement
-
-### Notre équipe
-- **Naully Nicolas** : [nicolas@naully.com](mailto:nicolas@naully.com) - Auteur principal
-- **Équipe technique** : [tech@naully.com](mailto:tech@naully.com) - Questions méthodologiques
+- **"Privacy-Preserving Machine Learning: Threats and Solutions"**
+  - [Survey Paper](https://arxiv.org/abs/2012.12884) - Li et al., 2020
+  - Pertinence : mét
