@@ -20,7 +20,7 @@
         }
 
         .container {
-            max-width: 2400px;
+            max-width: 2600px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
@@ -89,36 +89,37 @@
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 11px;
-            min-width: 2200px;
+            font-size: 10px;
+            min-width: 2800px;
         }
 
         .model-header {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             border: 2px solid #dee2e6;
-            padding: 15px 8px;
+            padding: 12px 6px;
             text-align: center;
             vertical-align: top;
             position: sticky;
             top: 0;
             z-index: 10;
-            height: 140px;
+            height: 130px;
+            width: 180px;
         }
 
         .model-header h3 {
-            font-size: 1rem;
-            margin-bottom: 6px;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
             color: #2c3e50;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
         .model-header a {
             color: #3498db;
             text-decoration: none;
             font-weight: 500;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             display: block;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
         }
 
         .model-header a:hover {
@@ -126,29 +127,30 @@
         }
 
         .model-header .flag {
-            font-size: 1.4rem;
-            margin-top: 6px;
+            font-size: 1.2rem;
+            margin-top: 4px;
         }
 
         .category-row {
             background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
             color: white;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         .category-row td {
-            padding: 12px;
+            padding: 10px;
             text-align: center;
             border: 1px solid #34495e;
         }
 
         .data-cell {
-            padding: 8px;
+            padding: 6px;
             border: 1px solid #dee2e6;
             vertical-align: top;
             background: #ffffff;
             transition: background-color 0.3s ease;
+            font-size: 0.75rem;
         }
 
         .data-cell:hover {
@@ -158,16 +160,16 @@
         .battery-gauge {
             display: flex;
             align-items: center;
-            gap: 6px;
-            margin: 2px 0;
-            font-size: 0.75rem;
+            gap: 4px;
+            margin: 1px 0;
+            font-size: 0.7rem;
         }
 
         .battery {
-            width: 40px;
-            height: 12px;
+            width: 35px;
+            height: 10px;
             border: 2px solid #333;
-            border-radius: 3px;
+            border-radius: 2px;
             position: relative;
             background: #f0f0f0;
             overflow: hidden;
@@ -175,14 +177,14 @@
 
         .battery::after {
             content: '';
-            width: 3px;
-            height: 6px;
+            width: 2px;
+            height: 4px;
             background: #333;
             position: absolute;
-            right: -3px;
+            right: -2px;
             top: 50%;
             transform: translateY(-50%);
-            border-radius: 0 2px 2px 0;
+            border-radius: 0 1px 1px 0;
         }
 
         .battery-fill {
@@ -197,16 +199,16 @@
         .battery-fill.very-high { background: #e74c3c; }
 
         .metric-value {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: #555;
         }
 
         .rating {
             display: inline-block;
-            padding: 2px 5px;
-            border-radius: 8px;
+            padding: 2px 4px;
+            border-radius: 6px;
             font-weight: bold;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
         }
 
         .rating.A { background: #d4edda; color: #155724; }
@@ -217,9 +219,9 @@
 
         .governance-score {
             font-weight: bold;
-            padding: 2px 5px;
-            border-radius: 5px;
-            font-size: 0.7rem;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.65rem;
         }
 
         .governance-score.excellent { background: #d4edda; color: #155724; }
@@ -234,18 +236,18 @@
 
         .pros-cons h4 {
             color: #2c3e50;
-            margin-bottom: 4px;
-            font-size: 0.75rem;
+            margin-bottom: 3px;
+            font-size: 0.7rem;
         }
 
         .pros-cons ul {
-            margin-left: 12px;
-            margin-bottom: 8px;
+            margin-left: 10px;
+            margin-bottom: 6px;
         }
 
         .pros-cons li {
-            margin-bottom: 2px;
-            font-size: 0.7rem;
+            margin-bottom: 1px;
+            font-size: 0.65rem;
         }
 
         .pros { color: #27ae60; }
@@ -253,45 +255,38 @@
 
         .best-for {
             background: #e8f5e8;
-            padding: 4px;
-            border-radius: 4px;
-            margin: 4px 0;
-            font-size: 0.7rem;
-        }
-
-        .avoid-when {
-            background: #ffeaea;
-            padding: 4px;
-            border-radius: 4px;
-            margin: 4px 0;
-            font-size: 0.7rem;
+            padding: 3px;
+            border-radius: 3px;
+            margin: 3px 0;
+            font-size: 0.65rem;
         }
 
         .feature-badge {
             display: inline-block;
             background: #3498db;
             color: white;
-            padding: 1px 4px;
-            border-radius: 6px;
-            font-size: 0.6rem;
+            padding: 1px 3px;
+            border-radius: 4px;
+            font-size: 0.55rem;
             margin: 1px;
         }
 
         .score {
             font-weight: bold;
             color: #2c3e50;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         .footer {
             background: #2c3e50;
             color: white;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
         }
 
         .footer p {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
         }
 
         .footer a {
@@ -317,15 +312,15 @@
             }
             
             .comparison-table {
-                font-size: 9px;
+                font-size: 8px;
             }
             
             .model-header h3 {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
             
             .data-cell {
-                padding: 6px;
+                padding: 4px;
             }
         }
     </style>
@@ -333,14 +328,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="new-badge">🆕 Proton Lumo Ajouté</div>
+            <div class="new-badge">🆕 GPT-5 & Claude 4.1</div>
             <h1>🤖⚡ Comparaison des chatbots IA 2025</h1>
-            <p class="subtitle">Analyse complète de l'écosystème IA : Performance, Énergie, Gouvernance & Conformité</p>
+            <p class="subtitle">Révolution IA : Guerre des prix, raisonnement natif et transparence énergétique</p>
             <div class="meta">
-                <strong>Par Naully Nicolas</strong> • Juillet 2025 • Données Artificial Analysis + FLI AI Safety Index
+                <strong>Par Naully Nicolas</strong> • Septembre 2025 • Données MIT, FLI AI Safety Index, Artificial Analysis
             </div>
             <div class="intro">
-                Comparaison exhaustive des leaders mondiaux de l'IA incluant performance technique (MMLU, LiveCodeBench), efficacité énergétique, prix API, et gouvernance selon le rapport FLI AI Safety Index 2025. Maintenant avec Proton Lumo, la première IA assistant chiffrée zero-access européenne, et les données LCA officielles de Mistral AI.
+                L'automne 2025 marque une transformation sans précédent de l'IA : guerre des prix déclenchée par les modèles chinois (97% de réduction), émergence du raisonnement natif, contextes de 100M tokens, transparence énergétique révolutionnaire avec la première LCA complète de Mistral, et lacunes de sécurité critiques révélées par le FLI Safety Index été 2025.
             </div>
         </div>
 
@@ -348,22 +343,32 @@
             <table class="comparison-table">
                 <thead>
                     <tr>
-                        <th class="model-header" style="width: 110px;">
+                        <th class="model-header" style="width: 100px;">
                             <h3>Catégorie</h3>
                         </th>
                         <th class="model-header">
-                            <h3>ChatGPT-4o</h3>
+                            <h3>GPT-5 🚀</h3>
                             <a href="https://chat.openai.com" target="_blank">chat.openai.com</a>
                             <div class="flag">🇺🇸</div>
                         </th>
                         <th class="model-header">
-                            <h3>Claude Sonnet 4</h3>
+                            <h3>Claude Opus 4.1 🧠</h3>
                             <a href="https://claude.ai" target="_blank">claude.ai</a>
                             <div class="flag">🇺🇸</div>
                         </th>
                         <th class="model-header">
-                            <h3>Gemini 2.5 Pro</h3>
+                            <h3>Gemini 2.5 Deep Think</h3>
                             <a href="https://gemini.google.com" target="_blank">gemini.google.com</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Llama 4 Maverick 🦙</h3>
+                            <a href="https://ai.meta.com" target="_blank">ai.meta.com</a>
+                            <div class="flag">🇺🇸</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>GPT-4.1</h3>
+                            <a href="https://openai.com/api" target="_blank">openai.com/api</a>
                             <div class="flag">🇺🇸</div>
                         </th>
                         <th class="model-header">
@@ -372,9 +377,19 @@
                             <div class="flag">🇺🇸</div>
                         </th>
                         <th class="model-header">
-                            <h3>Perplexity Pro</h3>
-                            <a href="https://perplexity.ai" target="_blank">perplexity.ai</a>
-                            <div class="flag">🇺🇸</div>
+                            <h3>DeepSeek V3.1 💎</h3>
+                            <a href="https://chat.deepseek.com" target="_blank">chat.deepseek.com</a>
+                            <div class="flag">🇨🇳</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Qwen 2.5-Max</h3>
+                            <a href="https://tongyi.aliyun.com" target="_blank">tongyi.aliyun.com</a>
+                            <div class="flag">🇨🇳</div>
+                        </th>
+                        <th class="model-header">
+                            <h3>Kimi K2 🤖</h3>
+                            <a href="https://platform.moonshot.ai" target="_blank">platform.moonshot.ai</a>
+                            <div class="flag">🇨🇳</div>
                         </th>
                         <th class="model-header">
                             <h3>Mistral Large 2 🏆</h3>
@@ -382,117 +397,112 @@
                             <div class="flag">🇫🇷</div>
                         </th>
                         <th class="model-header">
-                            <h3>Proton Lumo 🔐</h3>
-                            <a href="https://lumo.proton.me" target="_blank">lumo.proton.me</a>
-                            <div class="flag">🇨🇭</div>
-                        </th>
-                        <th class="model-header">
                             <h3>Grok 4</h3>
                             <a href="https://x.ai" target="_blank">x.ai</a>
                             <div class="flag">🇺🇸</div>
                         </th>
                         <th class="model-header">
-                            <h3>DeepSeek R1</h3>
-                            <a href="https://chat.deepseek.com" target="_blank">chat.deepseek.com</a>
-                            <div class="flag">🇨🇳</div>
-                        </th>
-                        <th class="model-header">
-                            <h3>Qwen2.5 Max</h3>
-                            <a href="https://tongyi.aliyun.com" target="_blank">tongyi.aliyun.com</a>
-                            <div class="flag">🇨🇳</div>
-                        </th>
-                        <th class="model-header">
-                            <h3>Kimi K2</h3>
-                            <a href="https://platform.moonshot.ai" target="_blank">platform.moonshot.ai</a>
-                            <div class="flag">🇨🇳</div>
+                            <h3>Perplexity Pro</h3>
+                            <a href="https://perplexity.ai" target="_blank">perplexity.ai</a>
+                            <div class="flag">🇺🇸</div>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Informations sur les Modèles -->
                     <tr class="category-row">
-                        <td colspan="12">📋 Informations sur les modèles</td>
+                        <td colspan="13">📋 Informations sur les modèles</td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>Date de sortie</strong></td>
-                        <td class="data-cell">Mai 2024</td>
-                        <td class="data-cell">Mai 2025</td>
-                        <td class="data-cell">Mai 2025</td>
+                        <td class="data-cell">Août 2025</td>
+                        <td class="data-cell">Août 2025</td>
+                        <td class="data-cell">Sept 2025</td>
+                        <td class="data-cell">Avril 2025</td>
+                        <td class="data-cell">Avril 2025</td>
                         <td class="data-cell">Mars 2024</td>
-                        <td class="data-cell">Janvier 2024</td>
-                        <td class="data-cell">Novembre 2024</td>
+                        <td class="data-cell">Août 2025</td>
+                        <td class="data-cell">Jan 2025</td>
                         <td class="data-cell">Juillet 2025</td>
+                        <td class="data-cell">Nov 2024</td>
                         <td class="data-cell">Juillet 2025</td>
-                        <td class="data-cell">Janvier 2025</td>
-                        <td class="data-cell">Janvier 2025</td>
-                        <td class="data-cell">Juillet 2025</td>
+                        <td class="data-cell">Jan 2024</td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>Paramètres</strong></td>
-                        <td class="data-cell">~1,8T</td>
-                        <td class="data-cell">~200B</td>
-                        <td class="data-cell">~540B</td>
-                        <td class="data-cell">~1,8T (GPT-4 based)</td>
-                        <td class="data-cell">~70B</td>
-                        <td class="data-cell">~405B</td>
-                        <td class="data-cell">~12B (Mistral NeMo)</td>
-                        <td class="data-cell">~314B</td>
-                        <td class="data-cell">~671B</td>
+                        <td class="data-cell">~2.1T</td>
+                        <td class="data-cell">~250B</td>
+                        <td class="data-cell">~650B</td>
+                        <td class="data-cell">~400B (17B actifs)</td>
+                        <td class="data-cell">~1.8T</td>
+                        <td class="data-cell">~1,8T (GPT-4)</td>
+                        <td class="data-cell">~685B</td>
                         <td class="data-cell">~688B (MoE)</td>
                         <td class="data-cell">~1T (32B actifs)</td>
+                        <td class="data-cell">~405B</td>
+                        <td class="data-cell">~314B</td>
+                        <td class="data-cell">~70B</td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>Architecture</strong></td>
+                        <td class="data-cell">Unified Multimodal</td>
+                        <td class="data-cell">Constitutional AI Extended</td>
+                        <td class="data-cell">Thinking Model</td>
+                        <td class="data-cell">MoE Native</td>
                         <td class="data-cell">Transformer</td>
-                        <td class="data-cell">IA Constitutionnelle</td>
-                        <td class="data-cell">Gemini</td>
                         <td class="data-cell">GPT-4 + M365</td>
-                        <td class="data-cell">Transformer + RAG</td>
-                        <td class="data-cell">Transformer</td>
-                        <td class="data-cell">Mistral NeMo + Zero-Access</td>
-                        <td class="data-cell">Transformer + RL</td>
-                        <td class="data-cell">MoE + RL</td>
+                        <td class="data-cell">MoE + RL optimisé</td>
                         <td class="data-cell">MoE</td>
                         <td class="data-cell">MoE Agentique</td>
+                        <td class="data-cell">Transformer</td>
+                        <td class="data-cell">Transformer + RL</td>
+                        <td class="data-cell">Transformer + RAG</td>
+                    </tr>
+                    <tr>
+                        <td class="data-cell"><strong>Contexte (tokens)</strong></td>
+                        <td class="data-cell">1M</td>
+                        <td class="data-cell">2M</td>
+                        <td class="data-cell">1M</td>
+                        <td class="data-cell">10M</td>
+                        <td class="data-cell">1M</td>
+                        <td class="data-cell">128K</td>
+                        <td class="data-cell">4M</td>
+                        <td class="data-cell">1M</td>
+                        <td class="data-cell">4M</td>
+                        <td class="data-cell">128K</td>
+                        <td class="data-cell">512K</td>
+                        <td class="data-cell">127K</td>
                     </tr>
 
                     <!-- Gouvernance et Responsabilité IA -->
                     <tr class="category-row">
-                        <td colspan="12">🏛️ Gouvernance et responsabilité IA</td>
+                        <td colspan="13">🏛️ Gouvernance et responsabilité IA (FLI été 2025)</td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>Note FLI Safety Index</strong><br><small>Gouvernance & Responsabilité</small></td>
                         <td class="data-cell">
-                            <span class="governance-score fair">C- (1.7)</span>
-                            <br><small>Structure mixte en transition</small>
+                            <span class="governance-score fair">C (2.10)</span>
+                            <br><small>Structure hybrid maintenue</small>
                         </td>
                         <td class="data-cell">
-                            <span class="governance-score excellent">A- (3.7)</span>
-                            <br><small>PBC + Long-Term Trust</small>
+                            <span class="governance-score good">C+ (2.64)</span>
+                            <br><small>Leader industrie</small>
                         </td>
                         <td class="data-cell">
-                            <span class="governance-score poor">D (1.0)</span>
-                            <br><small>Lobbying anti-régulation</small>
+                            <span class="governance-score poor">C- (1.76)</span>
+                            <br><small>Révision principes 2025</small>
+                        </td>
+                        <td class="data-cell">
+                            <span class="governance-score fair">C- (1.95)</span>
+                            <br><small>Open source leadership</small>
+                        </td>
+                        <td class="data-cell">
+                            <span class="governance-score fair">C (2.10)</span>
+                            <br><small>Même structure OpenAI</small>
                         </td>
                         <td class="data-cell">
                             <span class="governance-score good">B+ (3.2)</span>
                             <br><small>Enterprise publique</small>
-                        </td>
-                        <td class="data-cell">
-                            <span class="governance-score na">N/A</span>
-                            <br><small>Startup privée</small>
-                        </td>
-                        <td class="data-cell">
-                            <span class="governance-score na">N/A</span>
-                            <br><small>Startup européenne</small>
-                        </td>
-                        <td class="data-cell">
-                            <span class="governance-score excellent">A+ (4.0)</span>
-                            <br><small>Proton Foundation Nonprofit</small>
-                        </td>
-                        <td class="data-cell">
-                            <span class="governance-score fair">C- (1.85)</span>
-                            <br><small>PBC Nevada</small>
                         </td>
                         <td class="data-cell">
                             <span class="governance-score poor">D+ (1.35)</span>
@@ -504,46 +514,50 @@
                         </td>
                         <td class="data-cell">
                             <span class="governance-score na">N/A</span>
-                            <br><small>Moonshot AI privée</small>
+                            <br><small>Moonshot AI émergent</small>
+                        </td>
+                        <td class="data-cell">
+                            <span class="governance-score na">N/A</span>
+                            <br><small>Startup européenne</small>
+                        </td>
+                        <td class="data-cell">
+                            <span class="governance-score fair">C- (1.85)</span>
+                            <br><small>PBC Nevada</small>
+                        </td>
+                        <td class="data-cell">
+                            <span class="governance-score na">N/A</span>
+                            <br><small>Startup privée</small>
                         </td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>Structure de gouvernance</strong></td>
                         <td class="data-cell">
-                            Nonprofit → For-profit<br>
-                            <small>Transition controversée vers PBC</small>
+                            Nonprofit + PBC hybride<br>
+                            <small>100M+ USD equity pour nonprofit</small>
                         </td>
                         <td class="data-cell">
                             Public Benefit Corporation<br>
                             <small>Long-Term Benefit Trust</small>
                         </td>
                         <td class="data-cell">
-                            Filiale Google<br>
+                            Filiale Alphabet<br>
                             <small>Entreprise publique</small>
                         </td>
                         <td class="data-cell">
+                            Meta Inc.<br>
+                            <small>Open source strategy</small>
+                        </td>
+                        <td class="data-cell">
+                            Nonprofit + PBC hybride<br>
+                            <small>Même structure GPT-5</small>
+                        </td>
+                        <td class="data-cell">
                             Corporation publique<br>
-                            <small>Conformité enterprise mondiale</small>
+                            <small>Conformité enterprise</small>
                         </td>
                         <td class="data-cell">
-                            Startup privée<br>
-                            <small>Gouvernance classique</small>
-                        </td>
-                        <td class="data-cell">
-                            SAS française<br>
-                            <small>Conformité RGPD</small>
-                        </td>
-                        <td class="data-cell">
-                            Proton Foundation<br>
-                            <small>Nonprofit suisse</small>
-                        </td>
-                        <td class="data-cell">
-                            Public Benefit Corp.<br>
-                            <small>Nevada</small>
-                        </td>
-                        <td class="data-cell">
-                            Entreprise chinoise<br>
-                            <small>Régulation CAC</small>
+                            DeepSeek Ltd<br>
+                            <small>Régulation CAC Chine</small>
                         </td>
                         <td class="data-cell">
                             Filiale Alibaba<br>
@@ -553,611 +567,108 @@
                             Moonshot AI<br>
                             <small>Startup open-source</small>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Politiques de sécurité</strong></td>
                         <td class="data-cell">
-                            ✅ Politique whistleblowing publique<br>
-                            ⚠️ Restrictions equity révélées<br>
-                            📋 Preparedness Framework
+                            SAS française<br>
+                            <small>Conformité RGPD</small>
                         </td>
                         <td class="data-cell">
-                            ✅ Responsible Scaling Policy<br>
-                            ✅ Structure pro-sécurité<br>
-                            ⚠️ Pas de politique whistleblowing
+                            xAI Corp.<br>
+                            <small>PBC Nevada</small>
                         </td>
                         <td class="data-cell">
-                            📋 Frontier Safety Framework<br>
-                            ❌ Incidents employés sécurité<br>
-                            ⚠️ Lobbying anti-SB1047
+                            Perplexity Inc.<br>
+                            <small>Startup privée</small>
                         </td>
-                        <td class="data-cell">
-                            ✅ Responsible AI Standards<br>
-                            ✅ Enterprise compliance<br>
-                            📋 Microsoft AI ethics framework
-                        </td>
-                        <td class="data-cell">
-                            📋 Politiques de base<br>
-                            ✅ Focus recherche sécurisée<br>
-                            N/A Framework spécialisé
-                        </td>
-                        <td class="data-cell">
-                            ✅ Conformité européenne<br>
-                            📋 Politiques RGPD<br>
-                            🏆 LCA complète ISO 14040/44
-                        </td>
-                        <td class="data-cell">
-                            ✅ Privacy-first framework<br>
-                            ✅ Zero-access encryption<br>
-                            ✅ No-logs policy<br>
-                            ✅ Code open-source<br>
-                            ✅ RGPD natif
-                        </td>
-                        <td class="data-cell">
-                            📋 Draft Framework<br>
-                            ✅ Support SB1047<br>
-                            ⚠️ Incidents prompts
-                        </td>
-                        <td class="data-cell">
-                            📋 Régulation chinoise<br>
-                            ✅ Rapports incidents obligatoires<br>
-                            N/A Politique internationale
-                        </td>
-                        <td class="data-cell">
-                            📋 Standards Alibaba<br>
-                            ✅ Conformité chinoise<br>
-                            N/A Politiques publiques
-                        </td>
-                        <td class="data-cell">
-                            📋 Politiques open-source<br>
-                            ✅ Transparence code<br>
-                            ⚠️ Gouvernance récente
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Transparence et audit</strong></td>
-                        <td class="data-cell">
-                            ✅ Rapports réguliers misuse<br>
-                            ✅ Évaluations externes<br>
-                            ⚠️ Transition governance
-                        </td>
-                        <td class="data-cell">
-                            ✅ Excellent reporting<br>
-                            ✅ Recherche safety publique<br>
-                            ✅ Communications proactives
-                        </td>
-                        <td class="data-cell">
-                            ✅ Research publications<br>
-                            ⚠️ Communications leadership<br>
-                            📋 Rapports adversaire
-                        </td>
-                        <td class="data-cell">
-                            ✅ Responsible AI reports<br>
-                            ✅ Transparency hub Microsoft<br>
-                            ✅ Academic partnerships
-                        </td>
-                        <td class="data-cell">
-                            ✅ Transparence recherche<br>
-                            ✅ Citations sources<br>
-                            N/A Audits sécurité
-                        </td>
-                        <td class="data-cell">
-                            ✅ LCA complète publique<br>
-                            ✅ Documentation technique<br>
-                            🏆 Audit Carbone 4 + ADEME<br>
-                            ✅ Peer review Resilio/Hubblo
-                        </td>
-                        <td class="data-cell">
-                            ✅ Code entièrement open-source<br>
-                            ✅ Architecture transparente<br>
-                            ✅ Écosystème Proton (100M+ users)<br>
-                            ✅ Documentation complète<br>
-                            ✅ Audit cryptographique public
-                        </td>
-                        <td class="data-cell">
-                            ⚠️ Transparence limitée<br>
-                            ✅ System prompts publics<br>
-                            📋 Rapports incidents
-                        </td>
-                        <td class="data-cell">
-                            ✅ Code open-source<br>
-                            📋 Documentation technique<br>
-                            ⚠️ Transparence gouvernance
-                        </td>
-                        <td class="data-cell">
-                            📋 Standards Alibaba<br>
-                            ⚠️ Transparence internationale<br>
-                            N/A Rapports publics
-                        </td>
-                        <td class="data-cell">
-                            ✅ Code open-source<br>
-                            ✅ Documentation publique<br>
-                            ⚠️ Gouvernance émergente
-                        </td>
-                    </tr>
-
-                    <!-- Impact Énergétique et Environnemental -->
-                    <tr class="category-row">
-                        <td colspan="12">⚡ Impact énergétique et environnemental</td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Énergie requête texte (kWh)</strong><br><small>Par 1000 mots</small></td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill very-high" style="width: 80%"></div>
-                                </div>
-                                <span class="metric-value">0,0029</span>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill low" style="width: 22%"></div>
-                                </div>
-                                <span class="metric-value">0,0008</span>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill very-high" style="width: 95%"></div>
-                                </div>
-                                <span class="metric-value">0,0034</span>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill low" style="width: 12%"></div>
-                                </div>
-                                <span class="metric-value">0,0005</span>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill low" style="width: 18%"></div>
-                                </div>
-                                <span class="metric-value">0,0007</span>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="battery-gauge">
-                                <div class="battery">
-                                    <div class="battery-fill low" style="width: 23%"></div>
-                                </div>
-                                <span class="metric-value">0,0009</span>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Note environnementale</strong></td>
-                        <td class="data-cell"><span class="rating C">C+</span></td>
-                        <td class="data-cell"><span class="rating A">A</span></td>
-                        <td class="data-cell"><span class="rating B">B+</span></td>
-                        <td class="data-cell"><span class="rating B">B</span></td>
-                        <td class="data-cell"><span class="rating A">A-</span></td>
-                        <td class="data-cell"><span class="rating A">A-</span></td>
-                        <td class="data-cell"><span class="rating A">A</span></td>
-                        <td class="data-cell"><span class="rating D">D</span></td>
-                        <td class="data-cell"><span class="rating A">A+</span></td>
-                        <td class="data-cell"><span class="rating A">A</span></td>
-                        <td class="data-cell"><span class="rating A">A-</span></td>
                     </tr>
 
                     <!-- Métriques de Performance -->
                     <tr class="category-row">
-                        <td colspan="12">📊 Métriques de performance</td>
+                        <td colspan="13">📊 Métriques de performance (Benchmarks septembre 2025)</td>
                     </tr>
                     <tr>
                         <td class="data-cell"><strong>MMLU Pro (%)</strong><br><small>Raisonnement académique</small></td>
-                        <td class="data-cell"><span class="score">84.5</span></td>
-                        <td class="data-cell"><span class="score">86.8</span></td>
-                        <td class="data-cell"><span class="score">78.9</span></td>
+                        <td class="data-cell"><span class="score">94.6</span></td>
+                        <td class="data-cell"><span class="score">89.2</span></td>
+                        <td class="data-cell"><span class="score">88.7</span></td>
+                        <td class="data-cell"><span class="score">85.5</span></td>
+                        <td class="data-cell"><span class="score">87.3</span></td>
                         <td class="data-cell"><span class="score">83.2</span></td>
-                        <td class="data-cell"><span class="score">76.4</span></td>
-                        <td class="data-cell"><span class="score">81.7</span></td>
-                        <td class="data-cell"><span class="score">40.0</span></td>
+                        <td class="data-cell"><span class="score">88.9</span></td>
+                        <td class="data-cell"><span class="score">86.4</span></td>
                         <td class="data-cell"><span class="score">82.1</span></td>
-                        <td class="data-cell"><span class="score">87.9</span></td>
-                        <td class="data-cell"><span class="score">85.6</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
+                        <td class="data-cell"><span class="score">81.7</span></td>
+                        <td class="data-cell"><span class="score">82.1</span></td>
+                        <td class="data-cell"><span class="score">76.4</span></td>
                     </tr>
                     <tr>
-                        <td class="data-cell"><strong>LiveCodeBench (%)</strong><br><small>Programmation live</small></td>
-                        <td class="data-cell"><span class="score">44.7</span></td>
-                        <td class="data-cell"><span class="score">42.1</span></td>
-                        <td class="data-cell"><span class="score">38.9</span></td>
+                        <td class="data-cell"><strong>SWE-bench Verified (%)</strong><br><small>Codage réel</small></td>
+                        <td class="data-cell"><span class="score">74.9</span></td>
+                        <td class="data-cell"><span class="score">74.5</span></td>
+                        <td class="data-cell"><span class="score">65.2</span></td>
+                        <td class="data-cell"><span class="score">68.1</span></td>
+                        <td class="data-cell"><span class="score">54.6</span></td>
                         <td class="data-cell"><span class="score">41.2</span></td>
-                        <td class="data-cell"><span class="score">32.4</span></td>
-                        <td class="data-cell"><span class="score">39.2</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">41.8</span></td>
                         <td class="data-cell"><span class="score">67.9</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
+                        <td class="data-cell"><span class="score">59.3</span></td>
                         <td class="data-cell"><span class="score">53.7</span></td>
+                        <td class="data-cell"><span class="score">39.2</span></td>
+                        <td class="data-cell"><span class="score">41.8</span></td>
+                        <td class="data-cell"><span class="score">32.4</span></td>
                     </tr>
                     <tr>
-                        <td class="data-cell"><strong>Intelligence Index</strong><br><small>Artificial Analysis</small></td>
-                        <td class="data-cell"><span class="score">61.9</span></td>
-                        <td class="data-cell"><span class="score">69.8</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">58.3</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">20.0</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
-                        <td class="data-cell"><span class="score">N/A</span></td>
+                        <td class="data-cell"><strong>HumanEval (%)</strong><br><small>Programmation Python</small></td>
+                        <td class="data-cell"><span class="score">96.3</span></td>
+                        <td class="data-cell"><span class="score">92.0</span></td>
+                        <td class="data-cell"><span class="score">89.7</span></td>
+                        <td class="data-cell"><span class="score">91.2</span></td>
+                        <td class="data-cell"><span class="score">88.4</span></td>
+                        <td class="data-cell"><span class="score">87.1</span></td>
+                        <td class="data-cell"><span class="score">93.2</span></td>
+                        <td class="data-cell"><span class="score">87.8</span></td>
+                        <td class="data-cell"><span class="score">89.0</span></td>
+                        <td class="data-cell"><span class="score">84.6</span></td>
+                        <td class="data-cell"><span class="score">98.0</span></td>
+                        <td class="data-cell"><span class="score">79.2</span></td>
                     </tr>
                     <tr>
-                        <td class="data-cell"><strong>Latence (tokens/sec)</strong><br><small>Vitesse de sortie</small></td>
-                        <td class="data-cell">173.7</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">~150</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">155.8</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">N/A</td>
+                        <td class="data-cell"><strong>LMArena ELO</strong><br><small>Conversation générale</small></td>
+                        <td class="data-cell"><span class="score">1342</span></td>
+                        <td class="data-cell"><span class="score">1310</span></td>
+                        <td class="data-cell"><span class="score">1285</span></td>
+                        <td class="data-cell"><span class="score">1417</span></td>
+                        <td class="data-cell"><span class="score">1298</span></td>
+                        <td class="data-cell"><span class="score">1245</span></td>
+                        <td class="data-cell"><span class="score">1267</span></td>
+                        <td class="data-cell"><span class="score">1234</span></td>
+                        <td class="data-cell"><span class="score">1189</span></td>
+                        <td class="data-cell"><span class="score">1156</span></td>
+                        <td class="data-cell"><span class="score">1198</span></td>
+                        <td class="data-cell"><span class="score">1098</span></td>
                     </tr>
 
-                    <!-- Facteurs Économiques -->
+                    <!-- Impact Énergétique et Environnemental -->
                     <tr class="category-row">
-                        <td colspan="12">💰 Facteurs économiques</td>
+                        <td colspan="13">⚡ Impact énergétique (Données MIT + LCA Mistral)</td>
                     </tr>
                     <tr>
-                        <td class="data-cell"><strong>Prix API ($/1M jetons)</strong><br><small>Entrée / Sortie</small></td>
-                        <td class="data-cell">15 / 60</td>
-                        <td class="data-cell">3 / 15</td>
-                        <td class="data-cell">0.125 / 0.375</td>
-                        <td class="data-cell">Abonnement<br><small>$30/mois</small></td>
-                        <td class="data-cell">N/A</td>
-                        <td class="data-cell">2 / 6</td>
-                        <td class="data-cell">Gratuit / $12.99<br><small>Lumo Plus</small></td>
-                        <td class="data-cell">5 / 15</td>
-                        <td class="data-cell">0.14 / 0.28</td>
-                        <td class="data-cell">1 / 3</td>
-                        <td class="data-cell">0.15 / 2.50</td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Note de valeur</strong></td>
-                        <td class="data-cell"><span class="rating C">C+</span></td>
-                        <td class="data-cell"><span class="rating A">A-</span></td>
-                        <td class="data-cell"><span class="rating A">A+</span></td>
-                        <td class="data-cell"><span class="rating B">B+</span></td>
-                        <td class="data-cell"><span class="rating A">A-</span></td>
-                        <td class="data-cell"><span class="rating A">A</span></td>
-                        <td class="data-cell"><span class="rating A">A+</span></td>
-                        <td class="data-cell"><span class="rating C">C+</span></td>
-                        <td class="data-cell"><span class="rating A">A+</span></td>
-                        <td class="data-cell"><span class="rating A">A+</span></td>
-                        <td class="data-cell"><span class="rating A">A</span></td>
-                    </tr>
-
-                    <!-- Capacités Techniques -->
-                    <tr class="category-row">
-                        <td colspan="12">🛠️ Capacités techniques</td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Support multimodal</strong></td>
+                        <td class="data-cell"><strong>Énergie/1000 mots (kWh)</strong><br><small>Mesures 2025</small></td>
                         <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                            <span class="feature-badge">Audio</span>
-                            <span class="feature-badge">Vidéo</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                            <span class="feature-badge">Documents</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                            <span class="feature-badge">Audio</span>
-                            <span class="feature-badge">Code</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                            <span class="feature-badge">Office</span>
-                            <span class="feature-badge">Web</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Recherche</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Code</span>
-                            <span class="feature-badge">LCA</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Fichiers</span>
-                            <span class="feature-badge">Proton Drive</span>
-                            <span class="feature-badge">Chiffrement</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Code</span>
-                            <span class="feature-badge">Maths</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Image</span>
-                            <span class="feature-badge">Code</span>
-                        </td>
-                        <td class="data-cell">
-                            <span class="feature-badge">Texte</span>
-                            <span class="feature-badge">Code</span>
-                            <span class="feature-badge">Outils</span>
-                            <span class="feature-badge">Agents</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Spécialités</strong></td>
-                        <td class="data-cell">Multimodal, Écosystème</td>
-                        <td class="data-cell">Éthique, Raisonnement</td>
-                        <td class="data-cell">Intégration Google</td>
-                        <td class="data-cell">Productivité Office</td>
-                        <td class="data-cell">Recherche temps réel</td>
-                        <td class="data-cell">Transparence énergétique</td>
-                        <td class="data-cell">Privacy-first, Zero-access encryption</td>
-                        <td class="data-cell">Twitter/X intégré</td>
-                        <td class="data-cell">Mathématiques</td>
-                        <td class="data-cell">Multilingue</td>
-                        <td class="data-cell">Intelligence agentique</td>
-                    </tr>
-
-                    <!-- Avantages et Inconvénients -->
-                    <tr class="category-row">
-                        <td colspan="12">⚖️ Avantages et inconvénients</td>
-                    </tr>
-                    <tr>
-                        <td class="data-cell"><strong>Points forts & limitations</strong></td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>Performance leader du secteur</li>
-                                    <li>Capacités multimodales avancées</li>
-                                    <li>Écosystème riche d'outils</li>
-                                    <li>Politique whistleblowing publique</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Consommation énergétique élevée</li>
-                                    <li>Prix premium API</li>
-                                    <li>Gouvernance en transition</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Applications d'entreprise, créativité
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill high" style="width: 70%"></div>
                                 </div>
+                                <span class="metric-value">1.4</span>
                             </div>
                         </td>
                         <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏆 Meilleure gouvernance (A-)</li>
-                                    <li>Structure PBC + Trust sécurité</li>
-                                    <li>Excellent rapport performance/énergie</li>
-                                    <li>Sécurité et éthique renforcées</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Capacités multimodales limitées</li>
-                                    <li>Prix premium</li>
-                                    <li>Pas de politique whistleblowing</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Entreprises soucieuses d'éthique
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-fill medium" style="width: 45%"></div>
                                 </div>
+                                <span class="metric-value">0.92</span>
                             </div>
                         </td>
                         <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>Intégration Google Workspace</li>
-                                    <li>Prix très compétitif</li>
-                                    <li>Support multimodal natif</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Gouvernance faible (D)</li>
-                                    <li>Lobbying anti-régulation</li>
-                                    <li>Incidents employés sécurité</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Utilisateurs Google, prix-conscients
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏢 Intégration M365 native</li>
-                                    <li>Gouvernance enterprise (B+)</li>
-                                    <li>Conformité globale</li>
-                                    <li>Assistant productivity</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Abonnement obligatoire</li>
-                                    <li>Limité hors Microsoft 365</li>
-                                    <li>Consommation énergétique</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Entreprises Microsoft 365
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>Recherche en temps réel</li>
-                                    <li>Très faible consommation</li>
-                                    <li>Sources citées</li>
-                                    <li>Focus recherche sécurisée</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Capacités limitées</li>
-                                    <li>Gouvernance startup classique</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Recherche, fact-checking
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏆 Première LCA complète secteur IA</li>
-                                    <li>Solution européenne</li>
-                                    <li>Conformité RGPD native</li>
-                                    <li>Performance solide</li>
-                                    <li>Efficacité énergétique certifiée</li>
-                                    <li>Prix compétitif</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Écosystème en développement</li>
-                                    <li>Pas de framework IA spécialisé</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Entreprises européennes soucieuses d'environnement
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏆 Meilleure gouvernance IA (A+)</li>
-                                    <li>🔐 Chiffrement zero-access unique</li>
-                                    <li>✅ Aucun log, données privées</li>
-                                    <li>🇪🇺 Conformité RGPD native</li>
-                                    <li>🆓 Version gratuite disponible</li>
-                                    <li>📱 Apps mobiles + web</li>
-                                    <li>⚡ Efficacité énergétique</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Performance MMLU limitée (40%)</li>
-                                    <li>Écosystème en développement</li>
-                                    <li>Pas de multimodal avancé</li>
-                                    <li>Réponses plus lentes</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Privacy-first, entreprises RGPD, données sensibles
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>Accès temps réel Twitter/X</li>
-                                    <li>Structure PBC Nevada</li>
-                                    <li>CEO pro-régulation</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Consommation très élevée</li>
-                                    <li>Incidents system prompts</li>
-                                    <li>Prix élevé</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Analyse tendances Twitter
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏆 Leader LiveCodeBench (67.9%)</li>
-                                    <li>Efficacité énergétique exceptionnelle</li>
-                                    <li>Code open-source</li>
-                                    <li>Prix très compétitif</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Gouvernance chinoise (D+)</li>
-                                    <li>Transparence internationale limitée</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Développement, mathématiques
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>Excellent rapport qualité-prix</li>
-                                    <li>Performance MMLU solide</li>
-                                    <li>Standards Alibaba</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Gouvernance entreprise publique</li>
-                                    <li>Transparence internationale limitée</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Marché asiatique, e-commerce
-                                </div>
-                            </div>
-                        </td>
-                        <td class="data-cell">
-                            <div class="pros-cons">
-                                <h4 class="pros">✅ Avantages :</h4>
-                                <ul class="pros">
-                                    <li>🏆 Leader programmation (53.7%)</li>
-                                    <li>🤖 Capacités agentiques natives</li>
-                                    <li>💰 Open source + prix compétitif</li>
-                                    <li>⚡ Efficacité énergétique</li>
-                                </ul>
-                                <h4 class="cons">❌ Inconvénients :</h4>
-                                <ul class="cons">
-                                    <li>Nouveauté (juillet 2025)</li>
-                                    <li>Gouvernance startup émergente</li>
-                                    <li>Support multimodal limité</li>
-                                </ul>
-                                <div class="best-for">
-                                    <strong>💡 Idéal pour :</strong> Développement, agents autonomes
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="footer">
-            <p><strong>📊 Données mises à jour :</strong> Juillet 2025 avec données Artificial Analysis + FLI AI Safety Index</p>
-            <p><strong>🏛️ Gouvernance :</strong> Basée sur le <a href="https://futureoflife.org/ai-safety-index-2025">FLI AI Safety Index Summer 2025</a></p>
-            <p><strong>📈 Performance :</strong> Données <a href="https://artificialanalysis.ai">Artificial Analysis</a> • MMLU Pro • LiveCodeBench</p>
-            <p><strong>🔬 Méthodologie :</strong> <a href="docs/METHODOLOGY-FR.md">Voir documentation complète</a></p>
-            <p><strong>⚠️ Disclaimer :</strong> Les données énergétiques sont des estimations basées sur des sources publiques et peuvent varier de ±30% selon les conditions d'utilisation, à l'exception de Mistral Large 2 qui dispose d'une LCA complète certifiée ISO 14040/44. Microsoft Copilot nécessite un abonnement Microsoft 365 ($30/mois). Données Proton Lumo basées sur Mistral NeMo et architecture européenne.</p>
-            <p><strong>🆕 Nouveautés :</strong> Ajout de Proton Lumo, première IA assistant chiffrée zero-access avec gouvernance A+ (Proton Foundation nonprofit). Mise à jour Mistral Large 2 avec données LCA officielles (1.14 gCO₂e/400 tokens).</p>
-            <p>&copy; 2025 Naully Nicolas - <a href="LICENSE">Licence MIT</a> - <a href="https://github.com/naully">GitHub</a></p>
-        </div>
-    </div>
-</body>
+                            <div class="battery-gauge">
+                                <div class="battery">
+                                    <div class="battery-
